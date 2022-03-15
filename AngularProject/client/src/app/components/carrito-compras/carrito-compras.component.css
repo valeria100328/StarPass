@@ -1,0 +1,109 @@
+*
+.style{
+    margin: 0;
+    padding: 0;
+    background-color: #010038;
+    background-image: linear-gradient(180deg, #010038 12%, #45046a 50%, #872657 100%);
+    ;
+   
+}
+
+.menu{
+
+    background-color:#010038
+}
+
+.listaMenu{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+    margin-top: 20px;
+    height: 70px;
+
+
+}
+
+.butoniniciarSesion{
+    border-radius: 48px;
+    background-color: #45046A;
+    margin-right: 16px;
+    border: #45046A;
+    padding: 9px;
+    color: white;
+    font-weight: bold;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.Logo{
+    height: 90px;
+    width: 150%;
+}
+.iconUser{
+    margin-right: 18px;
+    margin-top: 2%;
+    color: white;
+}
+.butoncrearCuenta{
+    border-radius: 48px;
+    background-color: #45046A;
+    margin-right: 15px;
+    border: #45046A;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-family: 'League Gothic', sans-serif;
+}
+
+
+
+
+
+
+    .nav-item{
+        padding: 1px;
+        font-size: 117%;
+        margin-right: 20px;
+    }
+
+    .row:hover{
+        transform: scale(1.05)     
+    }
+    .container-fluid:hover{
+        transform: scale(1.05) 
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding-top: .7rem;
+        padding-bottom: .5rem;
+        padding-left: 30px;
+    }
+
+    li{
+        list-style: none;
+        transform: translateX(-21px);
+        text-align: center;
+        transition: all.7;
+        cursor: pointer;
+        font-family: 'PT Serif', serif;
+        font-size: 3%;
+    }
+    button,
+    i {
+        color: rgb(199, 189, 207);
+    }
+
+    h2{
+        font-family: 'PT Serif', serif;
+
+    }
+
+    li:hover,
+    button:hover{
+        background: #872657;
+    }
+
+.title {
+    color: white;
+    font-family: "League Gothic", sans-serif;
+}

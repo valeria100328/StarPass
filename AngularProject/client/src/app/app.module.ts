@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +26,7 @@ import { FormularioPagoComponent } from './components/formulario-pago/formulario
 import { TicketEventoComponent } from './components/ticket-evento/ticket-evento.component';
 import { ProcesoCompraSeleccionComponent } from './components/proceso-compra-seleccion/proceso-compra-seleccion.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
+
 
 @NgModule({
   declarations: [
@@ -50,9 +54,13 @@ import { Pagina404Component } from './components/pagina404/pagina404.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

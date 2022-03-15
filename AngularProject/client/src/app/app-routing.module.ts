@@ -4,12 +4,13 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarFiltroComponent } from './components/navbar-filtro/navbar-filtro.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
-
+import { CarritoComprasComponent } from './components/carrito-compras/carrito-compras.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path: 'sistema', component: NavbarComponent},
   {path: 'sistemanavbar', component: NavbarFiltroComponent},
+  {path: 'carritocompras',component:CarritoComprasComponent},
   {path:'404', component:Pagina404Component},
   {path: '**',redirectTo: '404',pathMatch: 'full'}
 ];
