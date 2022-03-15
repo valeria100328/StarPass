@@ -1,0 +1,56 @@
+
+
+.navbar{
+    background-color: #45046A; 
+    height: 75px;
+    
+}
+
+.NavbarFilterOptions{
+  background-color: #45046A;
+ 
+}
+.navbar-date{
+    margin-right: 500%;
+
+}
+.dropdown-menu{
+    margin-left: 380px;;
+    
+
+}
+.navbar-city{
+    margin-left: 380px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'League Gothic', sans-serif;
+    
+}
+
+
+a:hover{
+    background-color: #872657;
+    width: 30%;
+    border-radius: 5%;
+    font-family: 'League Gothic', sans-serif;
+}
+.navbarDate{
+    background-color: #45046A;
+}
+.iconDate{
+    margin-right: 18px;
+    margin-top: 10%;
+    color: white;
+}
+
+
+.navbar-date{
+    margin-left: 330px;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.dropdown-item{
+    font-weight:700;
+}
+

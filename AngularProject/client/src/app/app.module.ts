@@ -22,6 +22,7 @@ import { MetodoPagoComponent } from './components/metodo-pago/metodo-pago.compon
 import { FormularioPagoComponent } from './components/formulario-pago/formulario-pago.component';
 import { TicketEventoComponent } from './components/ticket-evento/ticket-evento.component';
 import { ProcesoCompraSeleccionComponent } from './components/proceso-compra-seleccion/proceso-compra-seleccion.component';
+import { Pagina404Component } from './components/pagina404/pagina404.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ProcesoCompraSeleccionComponent } from './components/proceso-compra-sel
     MetodoPagoComponent,
     FormularioPagoComponent,
     TicketEventoComponent,
-    ProcesoCompraSeleccionComponent
+    ProcesoCompraSeleccionComponent,
+    Pagina404Component
   ],
   imports: [
     BrowserModule,

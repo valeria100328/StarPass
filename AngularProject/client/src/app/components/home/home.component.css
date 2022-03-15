@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pageHome {
+  background-color: #010038;
+  width: 100%;
+  height: auto;
+}
+
+
+.titleevents {
+  font-family: "League Gothic", sans-serif;
+  color: #ffffff;
+  font-weight: 900;
+  text-align: center;
+  font-size: 30px;
+  height: 140%;
+  margin-top: 50px;
+  background: #872657;
+  height: 60px;
+  padding: 14px;
+  margin-bottom: 55px;
+  width: 84%;
+  margin-left: 8%;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-bottom: -30px;
+ 
+}
+
+.container .card {
+  width: 350px;
+  height: 354px;
+  border-radius: 8px;
+  /* Desborda el contenido el oculta -  */
+  overflow: hidden;
+  margin: 0 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  /* Hacer una transicion - animación css */
+  transition: all 0.25s;
+  box-shadow: 20px 20px 25px black;
+  background-color: #010038;
+}
+
+.container .card:hover {
+  /* Mi elemento se translade en Y -15px -Hacia arriba */
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 267px;
+  height: 300px;
+}
+
+
+.container .card h4 {
+font-family: "League Gothic", sans-serif;
+ margin-top: 5%;
+  font-weight: bolder;
+  color: white;
+  height: 250%;
+}
+
+.container .card h5 {
+    font-family: "League Gothic", sans-serif;
+    margin-top: 5%;
+    font-weight: 600;
+    color: rgb(241, 234, 234);
+    height: 250%;
+  }
+
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+
+/* Button*/
+.vieweventbutton {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #45046A;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 14%;
+    height: 5%;
+    padding: 20px;
+   
+
+   }
+   
+   .vieweventbutton:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+   }
+   
+   .vieweventbutton span {
+    position: absolute;
+   }
+   
+   .vieweventbutton span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #872657);
+   }
+   
+   .vieweventbutton:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   .vieweventbutton span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+   }
+   
+   .vieweventbutton:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   .vieweventbutton span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+   }
+   
+   .vieweventbutton:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   .vieweventbutton span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+   }
+   
+   .vieweventbutton:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   .vieweventbutton:active {
+    background: #872657;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #872657, 0 0 8px #001eff, 0 0 8px #872657;
+    transition: 0.1s;
+   }
+   
+   .vieweventbutton:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+
+   /* Footer*/
+   :root{
+    --color-esqueleto:#EFF3F5;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: var(--color-esqueleto);
+}
+
+.cover{
+    width: 100%;
+    height: 500px;
+    background: var(--color-esqueleto);
+    margin-top: 20px;
+}
+
+.container__article{
+    max-width: 1000px;
+    padding: 0px 20px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container__article .box__article{
+    width: 200px;
+    height: 250px;
+    background: var(--color-esqueleto);
+    margin: 20px;
+}
+
+/*Aquí debajo va el FOOTER*/
+
+footer{
+    width: 100%;
+    height: 20%;
+    padding: 25px 1px;
+    background-image: url(../../../assets/img/background-footer.svg);
+    background-size: cover;
+    
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+    
+  
+}
+
+.box__footer .logo img{
+    width: 180px;
+    
+}
+
+
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+    font-family: "League Gothic", sans-serif;
+}
+
+.companytext{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+    font-family: "League Gothic", sans-serif;
+
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 600;
+    font-family: "League Gothic", sans-serif;
+    
+    
+}
+.box__footer h3{
+    margin-top: 7%;
+    font-weight: 700; 
+    color: black;
+    font-family: "League Gothic", sans-serif;
+
+
+}
+
+.company{
+    margin-top: 50px;
+    margin-bottom: 6px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+   
+}
+
+
+.iconsSocialNetworks a:hover{
+    color: #45046A;
+
+
+}
+.iconsSocialNetworks a{
+    
+    color: #872657 ;
+    padding-left: 30px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    font-weight: 400;
+    color: rgb(17, 17, 17);
+    font-family: "League Gothic", sans-serif;
+
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    color: black;
+}
+.box__footer logo{
+    margin-bottom:  100px;
+}
+
+
+

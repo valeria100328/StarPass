@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-filtro',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-filtro.component.css']
 })
 export class NavbarFiltroComponent implements OnInit {
+  @Input() navbarfiltro: any;
 
   constructor() { }
 

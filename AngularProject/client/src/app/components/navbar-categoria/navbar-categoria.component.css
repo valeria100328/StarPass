@@ -1,0 +1,41 @@
+.navbar {
+  background-color: #45046a;
+  overflow: hidden;
+}
+
+.bar {
+  margin-left: 20px;
+  width: 350px;
+}
+
+.btn {
+  background-color: #872657;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #010038;
+  color: #fff;
+}
+
+i {
+  color: #fadb5b;
+}
+
+.navbar a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-right: 20px;
+  text-decoration: none;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.navbar a:hover {
+  background-color: #872657;
+  color: #fff;
+}

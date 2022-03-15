@@ -1,1 +1,252 @@
-<p>home works!</p>
+<app-navbar navbar="{{ navbar }}"></app-navbar> <br /><br /><br /><br />
+<app-navbar-categoria navbarCategoria="{{ navbarCategoria }}"></app-navbar-categoria>
+<div class="pageHome">
+  <div class="slider">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/DualipaSlider.jpg"
+            class="d-block w-100"
+            alt="FirstImage"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/ColdPlaySlider.jpg"
+            class="d-block w-100"
+            alt="SecondImage"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/RataBlancaSlider.jpg"
+            class="d-block w-100"
+            alt="ThirdtImage"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <app-navbar-filtro navbarfiltro="{{ navbarfiltro }}"></app-navbar-filtro>
+
+  <section id="section2" class="contentmusic">
+    <!-- Primer Container -->
+    <H5 class="titleevents">EVENTOS EN TU CIUDAD</H5>
+    <div class="container">
+      <!-- Primera carta -->
+
+      <div class="card">
+        <img src="../../../assets/img/eventoRataBlanca.jpg" alt="album1" />
+        <h4>RATA BLANCA</h4>
+        <h5>MANIZALES</h5>
+        <button class="vieweventbutton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Ver evento
+        </button>
+      </div>
+
+      <!-- Segunda carta -->
+      <div class="card">
+        <img src="../../../assets/img/eventoColdPlay.jpg" alt="album5" />
+        <h4>COLD PLAY</h4>
+        <h5>BOGOTÁ</h5>
+        <button class="vieweventbutton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Ver evento
+        </button>
+      </div>
+
+      <!-- Tercera carta -->
+      <div class="card">
+        <img src="../../../assets/img/eventoDualipa.jpg" alt="album4" />
+        <h4>DUA LIPA</h4>
+        <h5>BOGOTÁ</h5>
+        <button class="vieweventbutton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Ver evento
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="../../../assets/img/eventoColdPlay.jpg" alt="album1" />
+        <h4>COLD PLAY</h4>
+        <h5>BOGOTÁ</h5>
+        <button class="vieweventbutton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Ver evento
+        </button>
+      </div>
+    </div>
+
+    <!-- Segundo container -->
+    <div class="container">
+      <!-- Cuarta carta -->
+      <div class="card">
+        <img src="../../../assets/img/eventoDualipa.jpg" alt="album3" />
+        <h4>DUA LIPA</h4>
+        <h5>BOGOTÁ</h5>
+        <button class="vieweventbutton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Ver evento
+        </button>
+      </div>
+
+      <!-- Quinta carta -->
+      <div class="card">
+        <img src="../../../assets/img/eventoColdPlay.jpg" alt="album1" />
+        <h4>HARRY STYLES</h4>
+        <h5>BOGOTÁ</h5>
+        <button class="vieweventbutton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Ver evento
+        </button>
+      </div>
+
+      <!-- Sexta Carta -->
+
+      <div class="card">
+        <img src="../../../assets/img/eventoRataBlanca.jpg" alt="album1" />
+        <h4>RATA BLANCA</h4>
+        <h5>MANIZALES</h5>
+        <button class="vieweventbutton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Ver evento
+        </button>
+      </div>
+
+      <!-- Septima carta -->
+      <div class="card">
+        <img src="../../../assets/img/eventoColdPlay.jpg" alt="album1" />
+        <h4>HARRY STYLES</h4>
+        <h5>BOGOTÁ</h5>
+        <button class="vieweventbutton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Ver evento
+        </button>
+      </div>
+    </div>
+  </section>
+  <br /><br /><br />
+  <footer>
+    <div class="container__footer">
+      <div class="box__footer">
+        <div class="terms">
+          <p>
+            STAR PASS Cra 20 Av 12 Línea de atención: 100 87 56 345 Contacto:
+            support@starpass.com.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <h4 class="company">COMPAÑIA</h4>
+        <p class="companytext">
+          StarPass será la página que web que ayudará a millones de usuarios a
+          optener las entradas a sus eventos favoritos de manera virtual e
+          instantaneas.
+        </p>
+      </div>
+
+      <div class="iconsSocialNetworks">
+        <h4
+          class="text-uppercase mb-3"
+          style="
+            margin-top: 19%;
+            font-weight: 700;
+            color: black;
+            margin-left: 14%;
+          "
+        >
+          REDES SOCIALES
+        </h4>
+        <a class="btn btn-outline-light btn-social" href="#!"
+          ><i class="fab fa-facebook fa-3x"></i
+        ></a>
+        <a class="btn btn-outline-light btn-social" href="#!"
+          ><i class="fab fa-instagram fa-3x"></i
+        ></a>
+        <a class="btn btn-outline-light btn-social" href="#!"
+          ><i class="fab fa-twitter fa-3x"></i
+        ></a>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="box__copyright">
+      <hr />
+      <p>Todos los derechos reservados © 2022</p>
+      <div class="logo">
+        <img src="../../../assets/img/DIVELOPERS.png" alt="" />
+      </div>
+    </div>
+  </footer>
+</div>

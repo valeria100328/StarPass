@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-categoria',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-categoria.component.css']
 })
 export class NavbarCategoriaComponent implements OnInit {
+  //Dinamica de que cambien el titulo
+  @Input() navbarCategoria: any;
 
   constructor() { }
 
