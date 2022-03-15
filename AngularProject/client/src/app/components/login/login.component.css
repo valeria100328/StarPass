@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); 
+
+.login{
+background-color: #010038;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+.login-page{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #7a224e, #90295d);
+    box-shadow:  10px 10px 40px #73204a,
+                 -5px -5px 40px #9b2c64;
+    height: 800px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titule {
+  font-family: "League Gothic", sans-serif;;
+ color: #ffff;
+ text-align: center;
+ padding-bottom: 200px;
+}
+
+label{
+    font-family: "League Gothic", sans-serif;;
+    color: #ffff;
+    text-align: center;  
+}
+
+.login-buton {
+    padding-top: 20px;
+    position: relative;
+    padding: 8px 36px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+    background-color: #45046A;
+    font-family: "League Gothic", sans-serif;;
+    color: #ffff;
+}
