@@ -16,6 +16,7 @@ import { ValidarCuentaComponent } from './components/validar-cuenta/validar-cuen
 import { MetodoPagoComponent } from './components/metodo-pago/metodo-pago.component';
 import { CarritoComprasComponent } from './components/carrito-compras/carrito-compras.component';
 import { FormularioPagoComponent } from './components/formulario-pago/formulario-pago.component';
+import { DeportesCategoriaComponent } from './components/deportes-categoria/deportes-categoria.component';
 
 
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'sistema', component: NavbarComponent},
   {path: 'sistemanavbar', component: NavbarFiltroComponent},
   {path: 'conciertosCategorias', component: ConciertosCategoriaComponent},
+  {path: 'deportesCategorias', component: DeportesCategoriaComponent},
   {path: 'teatroCategoria', component: TeatroCategoriaComponent},
   {path:'formularioregistroboleta',component: FormularioRegistroBoletaComponent},
   {path: 'login', component: LoginComponent},
