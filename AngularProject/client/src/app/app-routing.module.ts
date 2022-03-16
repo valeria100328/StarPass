@@ -16,6 +16,7 @@ import { ValidarCuentaComponent } from './components/validar-cuenta/validar-cuen
 import { MetodoPagoComponent } from './components/metodo-pago/metodo-pago.component';
 import { CarritoComprasComponent } from './components/carrito-compras/carrito-compras.component';
 import { FormularioPagoComponent } from './components/formulario-pago/formulario-pago.component';
+import { DeportesCategoriaComponent } from './components/deportes-categoria/deportes-categoria.component';
 
 
 
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'metodopago', component: MetodoPagoComponent},
   {path: 'carritocompras', component: CarritoComprasComponent},
   {path: 'formulariopago', component: FormularioPagoComponent},
+  {path: 'deportescategorias', component: DeportesCategoriaComponent},
   {path:'404', component:Pagina404Component},
   {path: '**',redirectTo: '404',pathMatch: 'full'}
 ];

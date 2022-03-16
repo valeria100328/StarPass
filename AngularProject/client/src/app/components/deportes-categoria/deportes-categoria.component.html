@@ -1,1 +1,213 @@
-<p>deportes-categoria works!</p>
+<app-navbar navbar="{{ navbar }}"></app-navbar> <br /><br /><br /><br />
+<app-navbar-categoria navbarCategoria="{{ navbarCategoria }}"></app-navbar-categoria>
+
+<div class="pageHome">
+  <div class="slider">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/15GUIAUCL-1021x564.jpg"
+            class="d-block w-100"
+            alt="FirstImage"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/nick-hein.jpg"
+            class="d-block w-100"
+            alt="SecondImage"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/maxresdefault.jpg"
+            class="d-block w-100"
+            alt="ThirdtImage"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+<div class="lista-conciertos">
+    <br>
+    <div class="titulo">
+      <h2>EVENTOS EN TU CIUDAD</h2>
+    </div>
+
+    <div class="concierto">
+      <br>
+      <h3>REAL MADRID VS PSG</h3>
+      <h4 class="rb-lugar"><b>BOGOTÁ</b></h4>
+      <hr>
+      <img src="../../../assets/img/psgvsreal.png" alt="">
+      <!-- <i class="fa-solid fa-calendar fa-4x"></i> -->
+      <time datetime="2022-03-18" class="icon">
+        <strong>MAR</strong>
+        <span>29</span>
+        <em>15:00 hrs</em>
+      </time>
+      <h2>MOVISTAR ARENA</h2>
+      <button routerLink="/eventoratablanca" class="boton-evento btn btn-dark"><b>VER EVENTO</b></button>
+      <span>Otavos de final UCL 2022</span>
+      <hr>
+    </div>
+
+    <div class="concierto">
+      <h3>NICK HEIN</h3>
+      <h4 class="dua-lugar"><b>BOGOTÁ</b></h4>
+      <hr>
+      <img src="../../../assets/img/nick-hein.jpg" alt="">
+      <!-- <i class="fa-solid fa-calendar fa-3x"></i> -->
+      <time datetime="2014-09-20" class="icon">
+        <strong>SEP</strong>
+        <span>17</span>
+        <em>19:00 hrs</em>
+      </time>
+      <h2>PARQUE SALITRE MÁGICO</h2>
+      <button routerLink="/eventodualipa" class="boton-evento btn btn-dark"><b>VER EVENTO</b></button>
+      <span>Pelea de año</span>
+      <hr>
+    </div>
+
+    <div class="concierto">
+      <H3>BIKE CHALLENGE</H3>
+      <h4 class="cp-lugar"><b>BOGOTÁ</b></h4>
+      <hr>
+      <img src="../../../assets/img/maxresdefault.jpg" alt="">
+      <!-- <i class="fa-solid fa-calendar fa-3x"></i> -->
+      <time datetime="2014-09-20" class="icon">
+        <strong>SEP</strong>
+        <span>18</span>
+        <em>16:30 hrs</em>
+      </time>
+      <h2>ESTADIO NEMESIO CAMACHO EL CAMPÍN</h2>
+      <button routerLink="/eventocoldplay" class="boton-evento btn btn-dark"><b>VER EVENTO</b></button>
+      <span>Bike tour 2022</span>
+      <hr>
+    </div>
+
+    <div class="concierto">
+      <H3>FINAL CHAMPIONS 2022</H3>
+      <h4 class="bum-lugar"><b>MEDELLIN</b></h4>
+      <hr>
+      <img src="../../../assets/img/final.jpg" alt="">
+      <!-- <i class="fa-solid fa-calendar fa-3x"></i> -->
+      <time datetime="2014-09-20" class="icon">
+        <strong>NOV</strong>
+        <span>15</span>
+        <em>23:50 hrs</em>
+      </time>
+      <h2>PARQUE NORTE MEDELLIN</h2>
+      <button class="boton-evento-cancel btn btn-dark text-danger"><b>CANCELADO</b></button>
+      <span>Liga de campeones 2022</span>
+    </div>
+    <br>
+</div>
+
+<br /><br /><br />
+<footer>
+  <div class="container__footer">
+    <div class="box__footer">
+      <div class="terms">
+        <p>
+          STAR PASS Cra 20 Av 12 Línea de atención: 100 87 56 345 Contacto:
+          support@starpass.com.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h4 class="company">COMPAÑIA</h4>
+      <p class="companytext">
+        StarPass será la página que web que ayudará a millones de usuarios a
+        optener las entradas a sus eventos favoritos de manera virtual e
+        instantaneas.
+      </p>
+    </div>
+
+    <div class="iconsSocialNetworks">
+      <h4
+        class="text-uppercase mb-3"
+        style="
+          margin-top: 19%;
+          font-weight: 700;
+          color: black;
+          margin-left: 14%;
+        "
+      >
+        REDES SOCIALES
+      </h4>
+      <a class="btn btn-outline-light btn-social" href="#!"
+        ><i class="fab fa-facebook fa-3x"></i
+      ></a>
+      <a class="btn btn-outline-light btn-social" href="#!"
+        ><i class="fab fa-instagram fa-3x"></i
+      ></a>
+      <a class="btn btn-outline-light btn-social" href="#!"
+        ><i class="fab fa-twitter fa-3x"></i
+      ></a>
+    </div>
+  </div>
+  <br /><br />
+
+  <div class="box__copyright">
+    <hr />
+    <p>Todos los derechos reservados © 2022</p>
+    <div class="logo">
+      <img src="../../../assets/img/DIVELOPERS.png" alt="" />
+    </div>
+  </div>
+</footer>

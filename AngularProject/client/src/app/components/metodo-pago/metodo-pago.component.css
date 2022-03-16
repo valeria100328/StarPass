@@ -1,5 +1,73 @@
-*{
+.menu{
+
+    background-color: #010038;
+    
+    
+}
+
+.Logo{
+    height: 90px;
+    width: 150%;
+}
+.iconUser{
+    margin-right: 18px;
+    margin-top: 2%;
+    color: white;
+}
+    .nav-item{
+        padding: 1px;
+        font-size: 117%;
+        margin-right: 20px;
+    }
+
+    .row:hover{
+        transform: scale(1.05)     
+    }
+    .container-fluid:hover{
+        transform: scale(1.05) 
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding-top: .7rem;
+        padding-bottom: .5rem;
+        padding-left: 30px;
+    }
+
+    li{
+        list-style: none;
+        transform: translateX(-21px);
+        text-align: center;
+        transition: all.7;
+        cursor: pointer;
+        font-family: 'PT Serif', serif;
+        font-size: 3%;
+    }
+    button,
+    i {
+        color: rgb(199, 189, 207);
+    }
+
+    h2{
+        font-family: 'PT Serif', serif;
+
+    }
+
+
+.title {
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    margin-right: 33px; 
+
+}
+
+.flex-container{
+margin-left: 10%;
+}
+.conatiner{
     background: linear-gradient(180deg, #010038 0%, #872657 100%);
+    width: auto;
+    height: 880px;
 }
 
 h2{
@@ -13,7 +81,8 @@ h2{
 }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color: #010038;
+    color: white;
     width: 400px;
     margin: 10px;
     text-align: center;
@@ -22,6 +91,9 @@ h2{
     justify-content: center;
     margin-left: 37%;
     margin-top: 4%;
+    box-shadow: 20px 20px 25px black;
+    font-family: "League Gothic", sans-serif;
+
   }
 img{
     width: 60px;
@@ -41,10 +113,11 @@ img{
   }
   .ov-btn-slide-left:hover {
     color: #fff; /* color de fuente hover */
+    font-family: "League Gothic", sans-serif;
   }
   .ov-btn-slide-left::after {
     content: "";
-    background: #010038; /* color de fondo hover */
+    background: #611c3f; /* color de fondo hover */
     position: absolute;
     z-index: -1;
     padding: 16px 20px;
