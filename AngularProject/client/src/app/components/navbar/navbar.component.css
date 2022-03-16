@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
 }
-.menu{
 
-    background-color:#010038
+.menu{
+    background-color:#010038;
 }
 
 .listaMenu{
@@ -13,7 +13,6 @@
     margin-right: 3%;
     margin-top: 20px;
     height: 70px;
-
 
 }
 
@@ -60,11 +59,19 @@
     }
 
     .row:hover{
-        transform: scale(1.05)     
-    }
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
     .container-fluid:hover{
-        transform: scale(1.05) 
-    }
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
 
     .navbar {
         justify-content: space-between;

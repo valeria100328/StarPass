@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-conciertos-categoria',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conciertos-categoria.component.css']
 })
 export class ConciertosCategoriaComponent implements OnInit {
+  @Input() navbarfiltro: any;
+  @Input()  navbar: any;
+  @Input() navbarCategoria: any;
 
   constructor() { }
 

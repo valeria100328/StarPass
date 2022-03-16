@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu{
+
+    background-color: #010038;
+    
+}
+
+.Logo{
+    height: 90px;
+    width: 150%;
+}
+.iconUser{
+    margin-right: 18px;
+    margin-top: 2%;
+    color: white;
+}
+    .nav-item{
+        padding: 1px;
+        font-size: 117%;
+        margin-right: 20px;
+    }
+
+    .row:hover{
+        transform: scale(1.05)     
+    }
+    .container-fluid:hover{
+        transform: scale(1.05) 
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding-top: .7rem;
+        padding-bottom: .5rem;
+        padding-left: 30px;
+    }
+
+    li{
+        list-style: none;
+        transform: translateX(-21px);
+        text-align: center;
+        transition: all.7;
+        cursor: pointer;
+        font-family: 'PT Serif', serif;
+        font-size: 3%;
+    }
+    button,
+    i {
+        color: rgb(199, 189, 207);
+    }
+
+  
+.table table-dark{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    margin-right: 7%; 
+
+}
+
+button {
+    margin-top: 2%;
+    text-decoration: none;
+    position: absolute;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+   }
+   
+   button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+   }
+   
+   button:hover::before {
+    filter: blur(20px);
+   }
+   
+   button:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   }
+   .form-label{
+    font-family: 'PT Serif', serif;
+   }
+.form-control{
+    background-color: #c397dd;
+    border: .16rem solid;
+    height: 45px;
+}
+.form-label{
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: "League Gothic", sans-serif;
+    color: #872657;
+}
+
+
+
+
+    

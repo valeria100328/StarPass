@@ -1,0 +1,67 @@
+<div class="contentticketregrister">
+    <nav class="navbar navbar-expand-sm navbar-dark menu">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img class="Logo"  src="../../../assets/img/logitipo.png" alt="" width="416" height="66">
+        </a>
+    
+        <h1 class="title">Registro Boleteria</h1>
+    
+        <button class="navbar-toggler"
+        type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toogle navigation">
+    
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <nav class="listaMenu">
+            <div class="iconUser"><i class="far fa-user-circle fa-3x" style="color: #F8F8F8; margin-right: 25px"></i></div>
+            <form class="container-fluid justify-content-start">
+            </form>
+        </nav>
+        </div>
+    </nav>
+
+
+    <br><br><br><br><br>
+<div>
+<div class="contenido w-75" style = "margin-bottom: 50%; margin-left: 15%;">
+<form class="row g-3"  [formGroup]="registroTicketshopForm" (ngSubmit)="InfoRegistro()">
+    <div class="col-6" >
+        <label for="nombrecliente" class="form-label">Nombres</label>
+        <input type="text" clas="form-control" formControlName="nombres" class="form-control">
+        </div>
+    
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('nombres')?.hasError('required') && registroTicketshopForm.get('nombres')?.touched">Se requiere nombre del comprador</p>
+
+
+
+   
+    <div class="col-md-6 " style="padding-left: 6px;">
+    <label for="seccion_bloqueboleteria" class="form-label">Sección Bloque</label>
+     <input type="text" formControlName = "seccion_bloque" class="form-control">
+    <!--Mensaje-->
+      <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('seccion_bloque')?.hasError('required') && registroTicketshopForm.get('seccion_bloque')?.touched">Se requiere la sección del bloque para agregar al carrito de compras</p>
+    </div>
+
+
+    <div class="col-md-2" style="margin-bottom: 14px;">
+        <label for="asientos_asignadosboleteria" 
+        class="form-label">Asientos asignados</label>
+        <input type="text" formControlName= "asientos_asignados" class="form-control">
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('asientos_asignados')?.hasError('required') && registroTicketshopForm.get('asientos_asignados')?.touched">Se requiere el numero se asientos asignados para reservar</p>
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('asientos_asignados')?.hasError('pattern')">El precio no es valido, debe ser un número</p>
+    </div>
+
+    <div class="col-16">
+    <button type="submit" class="btn btn-primary">Registro</button>
+    </div>
+
+</form>
+</div>
+</div>
+</div>
