@@ -1,1 +1,170 @@
-<p>evento-coldplay works!</p>
+<app-navbar navbar="{{ navbar }}"></app-navbar> <br /><br /><br /><br />
+<app-navbar-categoria navbarCategoria="{{ navbarCategoria }}"></app-navbar-categoria>
+<div class="pageHome">
+    <div class="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="bd-placeholder-img" height="600" src="../../../assets/img/DualipaSlider.jpg"
+                        class="d-block w-100" alt="FirstImage" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" height="600" src="../../../assets/img/ColdPlaySlider.jpg"
+                        class="d-block w-100" alt="SecondImage" />
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" height="600" src="../../../assets/img/RataBlancaSlider.jpg"
+                        class="d-block w-100" alt="ThirdtImage" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <app-navbar-filtro navbarfiltro="{{ navbarfiltro }}"></app-navbar-filtro>
+
+
+    <section>
+        <div class="row">
+            <div class="col-sm-6" class="viewEvent">
+                <img class="viewEvent-img" src="../../../assets/img/coldplayposter.jpg" alt="coldplayposter">
+
+                <div class="informationEvent-item">
+                    <div class="card-body">
+                        <b><h2 class="card-title" style="color: #45046A; font-weight: 700;">COLDPLAY</h2></b><br>
+                        <h6 class="card-title">VIERNES, 17 DE SEPTIEMBRE DEL 2022</h6> <br>
+                        <h6 class="card-title">ESTADIO NEMESIO CAMACHO EL CAMPIN</h6>
+                        <h6 class="card-title">Carrera 30 y Calle 57, Bogotá, Cundinamarca</h6>
+                        <br>
+                        <p class="card-text">Coldplay, una de las bandas de rock alternativo británicas más legendarias de la historia, integrada por Chris Martin, Jon Buckland, Guy Berryman y Will Champion, confirmó su concierto en Colombia para el 2022 en compañía de la artista Camila Cabello.
+                            El escenario escogido para su presentación, que se llevará a cabo el 17 de septiembre del próximo año, fue el Estadio El Campín de Bogotá. Se trata  de una continuación de su gira mundial tras el lanzamiento de 'Music Of The Spheres', el nuevo álbum que presentaron el pasado mes de octubre.
+                            .</p>
+                        <br>
+                        <br>
+                        <table class="table" >
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">CATEGORIA</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">PRECIO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>DIAMANTE</td>
+                                    <td>PALCO </td>
+                                    <td>4'000.000 COP</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>PLATEA</td>
+                                    <td>VIP</td>
+                                    <td> 900.OOO COP</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">GENERAL</td>
+                                    <td>750.OOO COP</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br>
+                        <button class="login-buton" type="submit">comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="tituleRecomendation">
+            <h5 class="card-titleRecomendation">RECOMENDACIONES</h5>
+        </div>
+        <div class="recomendationEvent-item">
+            <div class="card-body">
+                <h5 class="card-title">Horarios del show* </h5>
+                <h6 class="card-title">Apertura de puertas: 3:00 pm</h6>
+                <h6 class="card-title">Artista invitado Camila Cabello 
+                </h6>
+                <h6 class="card-title">Colplay: 8:00 pm</h6>
+                <br><br>
+                <p class="card-text">Tipo de entrada y su método de entrega: Electronic-starpassTicket (entrada
+                    electrónica) se deberá descargar desde tu cuenta starpass y deberá ser exhibido, impreso o desde su
+                    dispositivo inteligente, al ingreso del evento.avés de la líneas de atención al cliente de starpass,
+                    y al personal logístico el día del evento. Edad mínima de ingreso: 12 años en todas las localidades.
+                    Todo menor de 14 años debe asistir en compañía de un adulto responsable y llevar identificación.
+                </p>
+            </div>
+            <div class="titule-map">
+            <h5>¿Cómo llegar?</h5>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7106100144215!2d-74.07897723523786!3d4.645617596625356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bcab3ccb441%3A0x489084f8e1a8752c!2sEstadio%20Nem%C3%A9sio%20Camacho%20El%20Camp%C3%ADn!5e0!3m2!1ses-419!2sco!4v1647398533050!5m2!1ses-419!2sco" width="700" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="terms">
+                    <p>
+                        STAR PASS Cra 20 Av 12 Línea de atención: 100 87 56 345 Contacto:
+                        support@starpass.com.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h4 class="company">COMPAÑIA</h4>
+                <p class="companytext">
+                    StarPass será la página que web que ayudará a millones de usuarios a
+                    optener las entradas a sus eventos favoritos de manera virtual e
+                    instantaneas.
+                </p>
+            </div>
+
+            <div class="iconsSocialNetworks">
+                <h4 class="text-uppercase mb-3" style="
+            margin-top: 19%;
+            font-weight: 700;
+            color: black;
+            margin-left: 14%;
+          ">
+                    REDES SOCIALES
+                </h4>
+                <a class="btn btn-outline-light btn-social" href="#!"><i class="fab fa-facebook fa-3x"></i></a>
+                <a class="btn btn-outline-light btn-social" href="#!"><i class="fab fa-instagram fa-3x"></i></a>
+                <a class="btn btn-outline-light btn-social" href="#!"><i class="fab fa-twitter fa-3x"></i></a>
+            </div>
+        </div>
+        <br /><br />
+
+        <div class="box__copyright">
+            <hr />
+            <p>Todos los derechos reservados © 2022</p>
+            <div class="logo">
+                <img src="../../../assets/img/DIVELOPERS.png" alt="" />
+            </div>
+        </div>
+    </footer>
+</div>

@@ -1,1 +1,174 @@
-<p>evento-rata-blanca works!</p>
+<app-navbar navbar="{{ navbar }}"></app-navbar> <br /><br /><br /><br/>
+
+<!-- SEPARADOR EVENTO RATA BLANCA -->
+<div class="pageHome">
+  <div class="separador">
+    <h1>RATA BLANCA</h1>
+  </div>
+<!-- EDICION DE SLIDER DE RATA BLANCA -->
+  <div class="slider">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/rata-blanca3.jpg"
+            class="d-block w-100"
+            alt="FirstImage"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/rata-blanca3.jpg"
+            class="d-block w-100"
+            alt="SecondImage"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="bd-placeholder-img"
+            height="600"
+            src="../../../assets/img/rata-blanca3.jpg"
+            class="d-block w-100"
+            alt="ThirdtImage"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- EDICIÓN TEXTO EVENTO RATA BLANCA -->
+  <H5 class="title">PROCESO DE COMPRA</H5>
+  <br>
+  <div class="texto">
+    <h1>RATA BLANCA SUR AMERICA TOUR 2022</h1>
+    <h3>Viernes, 18 de marzo de 2022 - 20:00 HRS</h3>
+    <h2>TEATRO LOS FUNDADORES</h2>
+    <h2>MANIZALEZ</h2>
+  </div>
+
+  <br> <br>
+  <!-- SELECCION DE ASIENTOS -->
+  <div class="selecciona-asiento">
+    <h1>SELECCIONA TU SECCIÓN</h1>
+    <br>
+    <div class="diamante">
+      <h2 routerLink="/formularioregistroboleta" >SECCIÓN DIAMANTE</h2>
+      <h2>$180.000</h2>
+    </div>
+    <div class="vip">
+      <h2 routerLink="/formularioregistroboleta" >SECCIÓN VIP 2DO PISO</h2>
+      <h2>$300.000</h2>
+    </div>
+    <br>
+    <div class="img">
+      <img src="../../../assets/img/asientos.png" alt="">
+    </div>
+  </div>
+  <br>
+  <div routerLink="/validarcuenta" class="electronic-ticket">
+    <b><h2>ESTE EVENTO CUENTA CON ELECTRONIC<img src="../../../assets/img/logitipo.png" alt="">TICKET</h2></b>
+  </div>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container__footer">
+    <div class="box__footer">
+      <div class="terms">
+        <p>
+          STAR PASS Cra 20 Av 12 Línea de atención: 100 87 56 345 Contacto:
+          support@starpass.com.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h4 class="company">COMPAÑIA</h4>
+      <p class="companytext">
+        StarPass será la página que web que ayudará a millones de usuarios a
+        optener las entradas a sus eventos favoritos de manera virtual e
+        instantaneas.
+      </p>
+    </div>
+
+    <div class="iconsSocialNetworks">
+      <h4
+        class="text-uppercase mb-3"
+        style="
+          margin-top: 19%;
+          font-weight: 700;
+          color: black;
+          margin-left: 14%;
+        "
+      >
+        REDES SOCIALES
+      </h4>
+      <a class="btn btn-outline-light btn-social" href="#!"
+        ><i class="fab fa-facebook fa-3x"></i
+      ></a>
+      <a class="btn btn-outline-light btn-social" href="#!"
+        ><i class="fab fa-instagram fa-3x"></i
+      ></a>
+      <a class="btn btn-outline-light btn-social" href="#!"
+        ><i class="fab fa-twitter fa-3x"></i
+      ></a>
+    </div>
+  </div>
+  <br /><br />
+
+  <div class="box__copyright">
+    <hr />
+    <p>Todos los derechos reservados © 2022</p>
+    <div class="logo">
+      <img src="../../../assets/img/DIVELOPERS.png" alt="" />
+    </div>
+  </div>
+</footer>
+</div>

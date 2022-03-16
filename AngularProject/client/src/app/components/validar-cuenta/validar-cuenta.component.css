@@ -1,0 +1,102 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #010038;
+  color: #fff;
+  margin: 0;
+  height: 80px;
+}
+
+h5 {
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.login {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1507766054980-dec40073b0f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  border-radius: 40px;
+  background: #010038;
+  box-shadow: inset 19px 19px 38px #010038, inset -19px -19px 38px #872657;
+  height: 370px;
+  margin-top: 10%;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: #3d85c0b6;
+}
+
+.social_icon span {
+  font-size: 60px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.social_icon span:hover {
+  color: #872657;
+  cursor: pointer;
+}
+
+.card-header h3 {
+  color: fff;
+}
+
+.social_icon {
+  position: absolute;
+  right: 20px;
+  top: -45px;
+}
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: #fff;
+  color: #010038;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.remember {
+  color: white;
+}
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.login_btn {
+  color: black;
+  background-color: #fff;
+  width: 100px;
+  margin-left: 70%;
+}
+
+.login_btn:hover {
+  color: #fff;
+  background-color: #872657;
+}
+
+.links {
+  color: white;
+  font-weight: 600;
+}
+
+.links a {
+  margin-left: 4px;
+  color: #fff;
+}

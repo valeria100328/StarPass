@@ -7,6 +7,12 @@ import { Pagina404Component } from './components/pagina404/pagina404.component';
 import {ConciertosCategoriaComponent}from './components/conciertos-categoria/conciertos-categoria.component'
 import { TeatroCategoriaComponent } from './components/teatro-categoria/teatro-categoria.component';
 import { FormularioRegistroBoletaComponent } from './components/formulario-registro-boleta/formulario-registro-boleta.component';
+import { LoginComponent } from './components/login/login.component';
+import { LoginRegisterComponent } from './components/login-register/login-register.component';
+import { EventoDualipaComponent } from './components/evento-dualipa/evento-dualipa.component';
+import { EventoRataBlancaComponent } from './components/evento-rata-blanca/evento-rata-blanca.component';
+import { EventoColdplayComponent } from './components/evento-coldplay/evento-coldplay.component';
+import { ValidarCuentaComponent } from './components/validar-cuenta/validar-cuenta.component';
 
 
 
@@ -15,9 +21,15 @@ const routes: Routes = [
   {path:'', component: HomeComponent},
   {path: 'sistema', component: NavbarComponent},
   {path: 'sistemanavbar', component: NavbarFiltroComponent},
-  {path: 'conciertosCategoria', component: ConciertosCategoriaComponent},
+  {path: 'conciertosCategorias', component: ConciertosCategoriaComponent},
   {path: 'teatroCategoria', component: TeatroCategoriaComponent},
   {path:'formularioregistroboleta',component: FormularioRegistroBoletaComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'loginregistrer', component:LoginRegisterComponent},
+  {path: 'eventodualipa', component: EventoDualipaComponent},
+  {path: 'eventoratablanca',component: EventoRataBlancaComponent},
+  {path: 'eventocoldplay', component: EventoColdplayComponent},
+  {path: 'validarcuenta', component: ValidarCuentaComponent},
   {path:'404', component:Pagina404Component},
   {path: '**',redirectTo: '404',pathMatch: 'full'}
 ];

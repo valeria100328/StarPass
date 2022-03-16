@@ -1,0 +1,60 @@
+.login {
+  background-color: #010038;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+}
+
+.login-page {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #7a224e, #90295d);
+  box-shadow: 10px 10px 40px #73204a, -5px -5px 40px #9b2c64;
+  height: 680px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titule {
+  font-family: "League Gothic", sans-serif;
+  color: #ffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+label {
+  font-family: "League Gothic", sans-serif;
+  color: #ffff;
+  text-align: center;
+}
+
+.login-buton {
+  padding-top: 20px;
+  padding: 8px 36px;
+  border-radius: 40px;
+  border: none;
+  background-color: #45046a;
+  font-family: "League Gothic", sans-serif;
+  color: #ffff;
+  margin-left: 12%;
+  margin-right: 10%;
+}
+
+.iconsSocialNetworks a:hover {
+  color: #45046a;
+}
+
+.iconsSocialNetworks a {
+  color: #ffff;
+  padding-left: 24px;
+  margin-top: 20px;
+}
+
+.iconsSocialNetworks i {
+  color: #ffff;
+  margin-bottom: 45px;
+}
+
