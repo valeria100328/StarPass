@@ -11,5 +11,4 @@ export class FormularioPagoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

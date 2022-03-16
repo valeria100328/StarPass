@@ -13,6 +13,9 @@ import { EventoDualipaComponent } from './components/evento-dualipa/evento-duali
 import { EventoRataBlancaComponent } from './components/evento-rata-blanca/evento-rata-blanca.component';
 import { EventoColdplayComponent } from './components/evento-coldplay/evento-coldplay.component';
 import { ValidarCuentaComponent } from './components/validar-cuenta/validar-cuenta.component';
+import { MetodoPagoComponent } from './components/metodo-pago/metodo-pago.component';
+import { CarritoComprasComponent } from './components/carrito-compras/carrito-compras.component';
+import { FormularioPagoComponent } from './components/formulario-pago/formulario-pago.component';
 
 
 
@@ -30,6 +33,9 @@ const routes: Routes = [
   {path: 'eventoratablanca',component: EventoRataBlancaComponent},
   {path: 'eventocoldplay', component: EventoColdplayComponent},
   {path: 'validarcuenta', component: ValidarCuentaComponent},
+  { path: 'metodopago', component: MetodoPagoComponent},
+  {path: 'carritocompras', component: CarritoComprasComponent},
+  {path: 'formulariopago', component: FormularioPagoComponent},
   {path:'404', component:Pagina404Component},
   {path: '**',redirectTo: '404',pathMatch: 'full'}
 ];

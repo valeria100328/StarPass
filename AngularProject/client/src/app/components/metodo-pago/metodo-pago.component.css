@@ -1,0 +1,66 @@
+*{
+    background: linear-gradient(180deg, #010038 0%, #872657 100%);
+}
+
+h2{
+    background-color: #f1f1f1;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    justify-content: center;
+    margin-left: 37%;
+    margin-top: 4%;
+  }
+img{
+    width: 60px;
+}
+
+.ov-btn-slide-left {
+    text-align: center;
+    background: blueviolet; /* color de fondo*/
+    color: black; /* color de fuente */
+    border: 2px solid #a638da; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 5px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-slide-left:hover {
+    color: #fff; /* color de fuente hover */
+  }
+  .ov-btn-slide-left::after {
+    content: "";
+    background: #010038; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .ov-btn-slide-left:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
