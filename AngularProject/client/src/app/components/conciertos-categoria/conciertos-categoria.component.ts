@@ -8,9 +8,9 @@ Swal
   styleUrls: ['./conciertos-categoria.component.css']
 })
 export class ConciertosCategoriaComponent implements OnInit {
-  @Input() navbarfiltro: any;
   @Input()  navbar: any;
   @Input() navbarCategoria: any;
+  @Input() navbarfiltro: any;
 
   constructor() { }
 

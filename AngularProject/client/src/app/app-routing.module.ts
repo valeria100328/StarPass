@@ -26,6 +26,7 @@ const routes: Routes = [
   {path: 'sistema', component: NavbarComponent},
   {path: 'sistemanavbar', component: NavbarFiltroComponent},
   {path: 'conciertosCategorias', component: ConciertosCategoriaComponent},
+  {path: 'deportesCategorias', component: DeportesCategoriaComponent},
   {path: 'teatroCategoria', component: TeatroCategoriaComponent},
   {path:'formularioregistroboleta',component: FormularioRegistroBoletaComponent},
   {path: 'login', component: LoginComponent},
