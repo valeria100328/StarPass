@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
 
         const data_usuario: Usuario = {
             correo: this.loginForm.get('usuario')?.value,
-            password: this.loginForm.get('password')?.value
+            password: this.loginForm.get('pass')?.value
         }
 
     this.router.navigate(['/']);

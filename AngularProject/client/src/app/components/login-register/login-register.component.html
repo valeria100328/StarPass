@@ -17,44 +17,44 @@
                     facebook</a>
             </div>
             <br>
-            <form>
+            <form [formGroup]="loginRegisterForm" (ngSubmit)="registroUsuario()">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Nombres</label>
-                    <input type="name" class="form-control" id="exampleInputName" aria-describedby="name"
-                        placeholder="Nombres">
+                    <label for="nombreCompleto">Nombres</label>
+                    <input type="name" formControlName="nombreCompleto" class="form-control" id="exampleInputName" aria-describedby="name"
+                        placeholder="nombre Completo">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputlastname">Apellidos</label>
-                    <input type="lastName" class="form-control" id="Inputlastname" aria-describedby="lastName"
-                        placeholder="Apellidos">
+                    <label for="apellidoCompleto">Apellidos</label>
+                    <input type="lastName" formControlName="apellidoCompleto" class="form-control" id="Inputlastname" aria-describedby="lastName"
+                        placeholder="apellido Completo">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputCity">Ciudad</label>
-                    <input type="city" class="form-control" id="InputCity" aria-describedby="city" placeholder="Ciudad">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="city" formControlName="ciudad"  class="form-control" id="InputCity" aria-describedby="city" placeholder="Ciudad">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <input type="email" formControlName="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Correo">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Confirma tu mail </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <input type="email" formControlName="confirmarEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Confirma tu Correo">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                    <label for="password">Contraseña</label>
+                    <input type="password" formControlName="password"  class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Confirma tu Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"
+                    <input type="password" formControlName="confirmarPassword"  class="form-control" id="exampleInputPassword1"
                         placeholder="Confirma Contraseña">
                 </div>
                 <br>
