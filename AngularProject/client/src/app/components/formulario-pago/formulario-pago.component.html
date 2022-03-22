@@ -1,94 +1,109 @@
-
-<div class="page">
-<div class="contenedor">
-    <!-- Tarjeta -->
-    <section class="tarjeta" id="tarjeta">
-        <div class="delantera">
-            <div class="logo-marca" id="logo-marca">
-                <img src="../../../assets/img/visa.png" alt="">
-            </div>
-            <img src="../../../assets/img/chip-tarjeta.png" class="chip" alt="">
-            <div class="datos">
-                <div class="grupo" id="numero">
-                    <p class="label">Número Tarjeta</p>
-                    <p class="numero">#### #### #### ####</p>
-                </div>
-                <div class="flexbox">
-                    <div class="grupo" id="nombre">
-                        <p class="label">Nombre Tarjeta</p>
-                        <p class="nombre">Star Pass</p>
-                    </div>
-
-                    <div class="grupo" id="expiracion">
-                        <p class="label">Expiracion</p>
-                        <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
-                    </div>
-                </div>
-            </div>
+<form>
+    <div class="container m-5 mx-auto">
+      <div class="row main">
+        <div class="col-lg-6 col-12 rcol">
+          <h3 class="product text-center mt-3">ZONA DE PAGO</h3>
+          <div class="image text-center">
+            <img
+              src="https://i.pinimg.com/564x/d0/b9/93/d0b99307ab38c18a87a065c29f924f5b.jpg"
+              width="400px"
+              height="350px"
+              class="imagen"
+            />
+          </div>
+          <p class="text-center mb-5">
+            StarPass da como prioridad la seguridad de nuestros
+            clientes <br />por esto nos abstenemos de utilizar su informacion solo
+            para su compra, <br />
+            para mayor informacion visite nuetras, <br />
+            <a [routerLink]="['/policies-and-privacy']">politicas y privacidad</a>
+          </p>
         </div>
-
-        <div class="trasera">
-            <div class="barra-magnetica"></div>
-            <div class="datos">
-                <div class="grupo" id="firma">
-                    <p class="label">Firma</p>
-                    <div class="firma"><p></p></div>
-                </div>
-                <div class="grupo" id="ccv">
-                    <p class="label">CCV</p>
-                    <p class="ccv"></p>
-                </div>
+        <div class="col-lg-6 col-12 scol mt-5 section-target">
+          <div class="row">
+            <h6 class="text-muted">Informacion de pago:</h6>
+          </div>
+          <div class="row">
+            <h6>Digite la informacio requerida</h6>
+          </div>
+          <div class="row r3">
+            <h3 class="payment">METODOS DE PAGO</h3>
+          </div>
+          <!-- <div *ngIf="Loading" class="spinner-border text-success ml-5" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div> -->
+          <div class="row">
+            <h6 class="payment-method">Seleccione el metodo de pago:</h6>
+          </div>
+          <div class="row r5">
+            <div class="col-2">
+              <img
+                src="https://img.icons8.com/color/48/000000/mastercard-logo.png"
+              />
             </div>
-            <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
-            <a href="#" class="link-banco">www.tubanco.com</a>
+            <div class="col-2">
+              <img src="https://img.icons8.com/color/48/000000/visa.png" />
+            </div>
+            <div class="col-2">
+              <img src="https://img.icons8.com/color/48/000000/paypal.png" />
+            </div>
+          </div>
+          <div class="row r3">
+            <form class="personalDetails" [formGroup]="form" (ngSubmit)="createTarget()">
+              <div class="form-group">
+                <!-- <i class="fas fa-user-circle icon-user"
+                  [class.green-icon]="this.form.get('titular')?.valid"
+                  [class.red-icon]="this.form.get('titular')?.invalid && this.form.get('titular')?.touched">
+                </i> -->
+                <input type="text" class="form-control"
+                  [class.green-icon]="this.form.get('titular')?.valid"
+                  [class.red-icon]="this.form.get('titular')?.invalid && this.form.get('titular')?.touched"
+                  formControlName="titular" placeholder="Nombre del titular de la tarjeta"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <i class="fas fa-credit-card icon-card"
+                  [class.green-icon]="this.form.get('numberTarget')?.valid"
+                  [class.red-icon]="this.form.get('numberTarget')?.invalid && this.form.get('numberTarget')?.touched">
+                </i> -->
+                <input type="text" class="form-control"
+                  [class.green-icon]="this.form.get('numberTarget')?.valid"
+                  [class.red-icon]="this.form.get('numberTarget')?.invalid && this.form.get('numberTarget')?.touched"
+                  formControlName="numberTarget" placeholder="Numero de tarjeta" maxlength="16"
+                />
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-4">
+                    <!-- <i class="fas fa-calendar-alt icon-calendar"
+                      [class.green-icon]="this.form.get('dateExpedition')?.valid"
+                      [class.red-icon]="this.form.get('dateExpedition')?.invalid && this.form.get('dateExpedition')?.touched">
+                    </i> -->
+                    <input type="text" class="form-control"
+                      [class.green-icon]="this.form.get('dateExpedition')?.valid"
+                      [class.red-icon]="this.form.get('dateExpedition')?.invalid && this.form.get('dateExpedition')?.touched"
+                      formControlName="dateExpedition" placeholder="MM/AAAA" maxlength="7"
+                    />
+                  </div>
+                  <div class="col-4 offset-2">
+                    <!-- <i class="fas fa-key icon-key"
+                      [class.green-icon]="this.form.get('cvv')?.valid"
+                      [class.red-icon]="this.form.get('cvv')?.invalid && this.form.get('cvv')?.touched">
+                    </i> -->
+                    <input type="password" class="form-control"
+                      [class.green-icon]="this.form.get('cvv')?.valid"
+                      [class.red-icon]="this.form.get('cvv')?.invalid && this.form.get('cvv')?.touched"
+                      formControlName="cvv" placeholder="CCV" maxlength="3"
+                    />
+                  </div>
+                </div>
+              </div>
+              <br class="br">
+              <!-- <button [disabled]="form.invalid" type="submit" class="pagar"><h5>PAGAR</h5></button> -->
+              <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+          </div>
         </div>
-    </section>
-
-    <!-- Contenedor Boton Abrir Formulario -->
-    <div class="contenedor-btn">
-        <button class="btn-abrir-formulario" id="btn-abrir-formulario">
-            <i class="fas fa-plus"></i>
-        </button>
+      </div>
     </div>
-
-    <!-- Formulario -->
-    <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-        <div class="grupo">
-            <label for="inputNumero">Número Tarjeta</label>
-            <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
-        </div>
-        <div class="grupo">
-            <label for="inputNombre">Nombre</label>
-            <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
-        </div>
-        <div class="flexbox">
-            <div class="grupo expira">
-                <label for="selectMes">Expiracion</label>
-                <div class="flexbox">
-                    <div class="grupo-select">
-                        <select name="mes" id="selectMes">
-                            <option disabled selected>Mes</option>
-                        </select>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <div class="grupo-select">
-                        <select name="year" id="selectYear">
-                            <option disabled selected>Año</option>
-                        </select>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grupo ccv">
-                <label for="inputCCV">CCV</label>
-                <input type="text" id="inputCCV" maxlength="3">
-            </div>
-        </div>
-        <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
-    <br>
-</div>
-</div>
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="/formulario.js"></script>
+  </form>
