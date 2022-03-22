@@ -17,6 +17,8 @@ import { MetodoPagoComponent } from './components/metodo-pago/metodo-pago.compon
 import { CarritoComprasComponent } from './components/carrito-compras/carrito-compras.component';
 import { FormularioPagoComponent } from './components/formulario-pago/formulario-pago.component';
 import { DeportesCategoriaComponent } from './components/deportes-categoria/deportes-categoria.component';
+import { FestivalesCategoriaComponent } from './components/festivales-categoria/festivales-categoria.component';
+import { CulturalesCategoriaComponent } from './components/culturales-categoria/culturales-categoria.component';
 
 
 
@@ -39,6 +41,8 @@ const routes: Routes = [
   {path: 'carritocompras', component: CarritoComprasComponent},
   {path: 'formulariopago', component: FormularioPagoComponent},
   {path: 'deportescategorias', component: DeportesCategoriaComponent},
+  {path: 'festivalescategoria', component: FestivalesCategoriaComponent},
+  {path:'culturalescategoria', component: CulturalesCategoriaComponent},
   {path:'404', component:Pagina404Component},
   {path: '**',redirectTo: '404',pathMatch: 'full'}
 ];

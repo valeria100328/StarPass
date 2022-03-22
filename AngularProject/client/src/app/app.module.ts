@@ -27,6 +27,9 @@ import { TicketEventoComponent } from './components/ticket-evento/ticket-evento.
 import { ProcesoCompraSeleccionComponent } from './components/proceso-compra-seleccion/proceso-compra-seleccion.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
 import { FormularioRegistroBoletaComponent } from './components/formulario-registro-boleta/formulario-registro-boleta.component';
+import { FestivalesCategoriaComponent } from './components/festivales-categoria/festivales-categoria.component';
+import { CulturalesCategoriaComponent } from './components/culturales-categoria/culturales-categoria.component';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +54,9 @@ import { FormularioRegistroBoletaComponent } from './components/formulario-regis
     TicketEventoComponent,
     ProcesoCompraSeleccionComponent,
     Pagina404Component,
-    FormularioRegistroBoletaComponent
+    FormularioRegistroBoletaComponent,
+    FestivalesCategoriaComponent,
+    CulturalesCategoriaComponent,
   ],
   imports: [
     BrowserModule,
