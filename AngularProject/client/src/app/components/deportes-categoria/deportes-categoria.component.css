@@ -1,9 +1,3 @@
-.pageHome {
-<<<<<<< HEAD
-    background-color: #010038;
-    width: 100%;
-    height: auto;
-  }
   
   .lista-conciertos {
     background-color: #010038;
@@ -292,11 +286,7 @@
   .box__footer logo{
     margin-bottom:  100px;
   }
-=======
-  background-color: #010038;
-  width: 100%;
-  height: auto;
-}
+
 
 .lista-conciertos {
   background-color: #010038;
@@ -585,4 +575,4 @@ footer{
 .box__footer logo{
   margin-bottom:  100px;
 }
->>>>>>> 81090384203b2b7edfee32b9069c56db9e19da94
+
