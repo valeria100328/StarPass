@@ -17,5 +17,9 @@ export class AutenticacionService {
   loginUser(user: any){
     return this.http.post<any>(this.loginURL, user)
   }
+  //Comprobaremos si un usuario esta logueado en la que nos devolvera por medio de !! true o false
+  isLogged(){
+    return !!localStorage.getItem('token')
+  }
 }
 

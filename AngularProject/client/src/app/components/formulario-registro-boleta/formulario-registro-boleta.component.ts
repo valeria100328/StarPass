@@ -4,6 +4,9 @@ import { Router } from '@angular/router';
 
 
 
+
+
+
 @Component({
   selector: 'app-formulario-registro-boleta',
   templateUrl: './formulario-registro-boleta.component.html',
@@ -18,18 +21,21 @@ export class FormularioRegistroBoletaComponent implements OnInit {
   
   constructor(private fb: FormBuilder, private router: Router) {
     this.registroTicketshopForm = this.fb.group({
-      nombres:['',Validators.required],
-      seccion_bloque: ['',Validators.required],
-      asientos_asignados: ['0', [Validators.required, Validators.pattern(this.soloNumeros), Validators.min(1)]],
+      seccion: ['',Validators.required],
+      cantidad_unidad: ['0', [Validators.required, Validators.pattern(this.soloNumeros), Validators.min(1)]],
+      servicio: ['0', [Validators.required, Validators.pattern(this.soloNumeros), Validators.min(1)]],
+      precio: ['0', [Validators.required, Validators.pattern(this.soloNumeros), Validators.min(1)]],
     });
   }
 
     ngOnInit(): void {
     }
-  
-  
+
   //capturamos la informacion
-     InfoRegistro() {
+    InfoRegistro() {
       console.log(this.registroTicketshopForm)
-     }
-}
+    }
+
+
+  }
+

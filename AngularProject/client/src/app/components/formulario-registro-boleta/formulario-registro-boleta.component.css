@@ -45,15 +45,7 @@
         padding-left: 30px;
     }
 
-    li{
-        list-style: none;
-        transform: translateX(-21px);
-        text-align: center;
-        transition: all.7;
-        cursor: pointer;
-        font-family: 'PT Serif', serif;
-        font-size: 3%;
-    }
+   
     button,
     i {
         color: rgb(199, 189, 207);
@@ -132,12 +124,14 @@ button {
 .form-control{
     border: .16rem solid;
     height: 45px;
+    
 }
 .form-label{
     margin-top: 10px;
     font-weight: bold;
     font-family: "League Gothic", sans-serif;
     color: #fff;
+    
 }
 
 

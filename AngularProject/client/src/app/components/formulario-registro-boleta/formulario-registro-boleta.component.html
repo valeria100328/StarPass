@@ -30,31 +30,39 @@
     <br><br><br><br><br>
 <div>
 <div class="contenido w-75" style = "margin-bottom: 50%; margin-left: 15%;">
-<form class="row g-3"  [formGroup]="registroTicketshopForm" (ngSubmit)="InfoRegistro()">
-    <div class="col-6" >
-        <label for="nombrecliente" class="form-label">Nombres</label>
-        <input type="text" clas="form-control" formControlName="nombres" class="form-control">
-        </div>
-    
-        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('nombres')?.hasError('required') && registroTicketshopForm.get('nombres')?.touched">Se requiere nombre del comprador</p>
+<form class="row g-6"  [formGroup]="registroTicketshopForm" (ngSubmit)="InfoRegistro()">
 
-
-
-   
-    <div class="col-md-6 " style="padding-left: 6px;">
-    <label for="seccion_bloqueboleteria" class="form-label">Sección Bloque</label>
-     <input type="text" formControlName = "seccion_bloque" class="form-control">
+    <div class="col-md-6 " style="padding-right: 10px;">
+    <label for="seccion_bloqueboleteria" class="form-label">Sección</label>
+     <input type="text" formControlName = "seccion" class="form-control">
     <!--Mensaje-->
-      <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('seccion_bloque')?.hasError('required') && registroTicketshopForm.get('seccion_bloque')?.touched">Se requiere la sección del bloque para agregar al carrito de compras</p>
+      <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('seccion')?.hasError('required') && registroTicketshopForm.get('seccion')?.touched">Se requiere la sección para agregar al carrito de compras</p>
     </div>
 
 
-    <div class="col-md-2" style="margin-bottom: 14px;">
-        <label for="asientos_asignadosboleteria" 
-        class="form-label">Asientos asignados</label>
-        <input type="text" formControlName= "asientos_asignados" class="form-control">
-        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('asientos_asignados')?.hasError('required') && registroTicketshopForm.get('asientos_asignados')?.touched">Se requiere el numero se asientos asignados para reservar</p>
-        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('asientos_asignados')?.hasError('pattern')">El precio no es valido, debe ser un número</p>
+    <div class="col-md-6" style="padding-left: 10px;">
+        <label for="cantidad_unidadboleteria" 
+        class="form-label">Cantidad por unidad</label>
+        <input type="text" formControlName= "cantidad_unidad" class="form-control">
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('cantidad_unidad')?.hasError('required') && registroTicketshopForm.get('cantidad_unidad')?.touched">Se requiere la cantidad por unidad de boletas para reservar</p>
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('cantidad_unidad')?.hasError('pattern')">El precio no es valido, debe ser un número</p>
+    </div>
+
+    <div class="col-md-6" style="padding-right: 10px;;">
+        <label for="servicio_asignadosboleteria" 
+        class="form-label">Servicio</label>
+        <input type="text" formControlName= "servicio" class="form-control">
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('servicio')?.hasError('required') && registroTicketshopForm.get('servicio')?.touched">Se requiere dar una bonificación de servicio para finaliar la reserva</p>
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('servicio')?.hasError('pattern')">El precio no es valido, debe ser un número</p>
+    </div>
+
+
+    <div class="col-md-6" style="padding-left: 10px;">
+        <label for="precio_asignadosboleteria" 
+        class="form-label">Precio</label>
+        <input type="text" formControlName= "precio" class="form-control">
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('precio')?.hasError('required') && registroTicketshopForm.get('precio')?.touched">Se requiere el precio de la boleta para tener una reserva exitosa</p>
+        <p class="fw-bold text-danger" *ngIf="registroTicketshopForm.get('precio')?.hasError('pattern')">El precio no es valido, debe ser un número</p>
     </div>
 
     <div class="col-16">
