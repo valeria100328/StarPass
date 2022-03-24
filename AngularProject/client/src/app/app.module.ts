@@ -29,6 +29,7 @@ import { Pagina404Component } from './components/pagina404/pagina404.component';
 import { FormularioRegistroBoletaComponent } from './components/formulario-registro-boleta/formulario-registro-boleta.component';
 import { FestivalesCategoriaComponent } from './components/festivales-categoria/festivales-categoria.component';
 import { CulturalesCategoriaComponent } from './components/culturales-categoria/culturales-categoria.component';
+import { AutenticacionService } from './services/autenticacion.service';
 
 
 @NgModule({
@@ -65,7 +66,7 @@ import { CulturalesCategoriaComponent } from './components/culturales-categoria/
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AutenticacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

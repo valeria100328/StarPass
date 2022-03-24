@@ -1,9 +1,10 @@
 export class BoletaGeneral{
     _id?: string;
-    precio: number;
     seccion: string;
-    servicio: number;
     cantidad_unidad: number;
+    servicio: number;
+    precio: number;
+    
 
 
     constructor(precioBoleta: number, seccionBoleta: string, servicioBoleta: number, cantidadUnidadBoleta:number)
