@@ -1,4 +1,5 @@
 export class BoletaGeneral{
+    //CRUD
     _id?: string;
     seccion: string;
     cantidad_unidad: number;
