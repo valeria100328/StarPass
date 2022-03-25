@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
@@ -9,6 +10,8 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
   styleUrls: ['./formulario-pago.component.css']
 })
 export class FormularioPagoComponent implements OnInit {
+  form: FormGroup;
+  Loading = false;
 
   constructor() { }
 

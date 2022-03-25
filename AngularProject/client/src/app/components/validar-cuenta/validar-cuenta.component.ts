@@ -7,11 +7,21 @@ import { AutenticacionService } from 'src/app/services/autenticacion.service';
   styleUrls: ['./validar-cuenta.component.css']
 })
 export class ValidarCuentaComponent implements OnInit {
-  email = 'email'
   loginUser = {}
 
-  constructor(autenticacion: AutenticacionService) { }
+  constructor(private autenticacion: AutenticacionService) { }
 
   ngOnInit(): void {
+  }
+  login(){
+    this.autenticacion.loginUser(this.loginUser)
+    .subscribe(
+      res => {
+      console.log(res)
+      //Si tod esta correcto se nos va a guardar el localstorage
+      localStorage.setItem('token', res.jwtToken)
+    },
+    err => console.log(err)
+    )
   }
 }
