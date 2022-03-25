@@ -14,7 +14,7 @@
             <form [formGroup]="loginForm"  (ngSubmit)="accesoUsuario()">
                 <div class="form-group">
                     <label for="usuario">Correo Electrónico </label>
-                    <input type="email" formControlName="usuario" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <input  type="email" formControlName="usuario" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Enter email">
                    <p class="fw-bold text-danger" *ngIf="loginForm.get('usuario')?.hasError('required') && loginForm.get('usuario')?.touched">correo no valido </p>
                 </div>

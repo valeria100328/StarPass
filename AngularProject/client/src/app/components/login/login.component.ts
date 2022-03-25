@@ -46,8 +46,9 @@ export class LoginComponent implements OnInit {
     console.log(this.loginForm.get('usuario')?.value);
 
         const data_usuario: User = {
-            correo: this.loginForm.get('usuario')?.value,
-            password: this.loginForm.get('password')?.value
+          email: this.loginForm.get('usuario')?.value,
+          password: this.loginForm.get('password')?.value,
+          name: ''
         }
 
     this.router.navigate(['/']);
