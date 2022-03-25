@@ -1,41 +1,139 @@
-
-    <!-- Formulario -->
-    <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-        <div class="grupo">
-            <label for="inputNumero">Número Tarjeta</label>
-            <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+rel="stylesheet"
+/>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+  <form>
+    <div class="container m-5 mx-auto">
+      <div class="row main">
+        <div class="col-lg-6 col-12 rcol">
+          <h3 class="product text-center mt-3">ZONA DE PAGO</h3>
+          <div class="image text-center">
+            <img
+              src="https://i.pinimg.com/564x/d0/b9/93/d0b99307ab38c18a87a065c29f924f5b.jpg"
+              width="400px"
+              height="350px"
+              class="imagen"
+            />
+          </div>
+          <p class="text-center mb-5">
+            StarPass da como prioridad la seguridad de nuestros
+            clientes <br />por esto nos abstenemos de utilizar su informacion solo
+            para su compra, <br />
+            para mayor informacion visite nuetras, <br />
+            <a [routerLink]="['/policies-and-privacy']">politicas y privacidad</a>
+          </p>
         </div>
-        <div class="grupo">
-            <label for="inputNombre">Nombre</label>
-            <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
-        </div>
-        <div class="flexbox">
-            <div class="grupo expira">
-                <label for="selectMes">Expiracion</label>
-                <div class="flexbox">
-                    <div class="grupo-select">
-                        <select name="mes" id="selectMes">
-                            <option disabled selected>Mes</option>
-                        </select>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <div class="grupo-select">
-                        <select name="year" id="selectYear">
-                            <option disabled selected>Año</option>
-                        </select>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
+        <div class="col-lg-6 col-12 scol mt-5 section-target">
+          <div class="row">
+            <h6 class="text-muted">Informacion de pago:</h6>
+          </div>
+          <div class="row">
+            <h6>Digite la informacio requerida</h6>
+          </div>
+          <div class="row r3">
+            <h3 class="payment">METODOS DE PAGO</h3>
+          </div>
+          <!-- <div *ngIf="Loading" class="spinner-border text-success ml-5" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div> -->
+          <div class="row">
+            <h6 class="payment-method">Seleccione el metodo de pago:</h6>
+          </div>
+          <div class="row r5">
+            <div class="col-2">
+              <img
+                src="https://img.icons8.com/color/48/000000/mastercard-logo.png"
+              />
+            </div>
+            <div class="col-2">
+              <img src="https://img.icons8.com/color/48/000000/visa.png" />
+            </div>
+            <div class="col-2">
+              <img src="https://img.icons8.com/color/48/000000/paypal.png" />
+            </div>
+          </div>
+          <div class="row r3">
+            <form class="personalDetails" [formGroup]="form" (ngSubmit)="createTarget()">
+              <div class="form-group">
+                <!-- <i class="fas fa-user-circle icon-user"
+                  [class.green-icon]="this.form.get('titular')?.valid"
+                  [class.red-icon]="this.form.get('titular')?.invalid && this.form.get('titular')?.touched">
+                </i> -->
+                <input type="text" class="form-control"
+                  [class.green-icon]="this.form.get('titular')?.valid"
+                  [class.red-icon]="this.form.get('titular')?.invalid && this.form.get('titular')?.touched"
+                  formControlName="titular" placeholder="Nombre del titular de la tarjeta"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <i class="fas fa-credit-card icon-card"
+                  [class.green-icon]="this.form.get('numberTarget')?.valid"
+                  [class.red-icon]="this.form.get('numberTarget')?.invalid && this.form.get('numberTarget')?.touched">
+                </i> -->
+                <input type="text" class="form-control"
+                  [class.green-icon]="this.form.get('numberTarget')?.valid"
+                  [class.red-icon]="this.form.get('numberTarget')?.invalid && this.form.get('numberTarget')?.touched"
+                  formControlName="numberTarget" placeholder="Numero de tarjeta" maxlength="16"
+                />
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-4">
+                    <!-- <i class="fas fa-calendar-alt icon-calendar"
+                      [class.green-icon]="this.form.get('dateExpedition')?.valid"
+                      [class.red-icon]="this.form.get('dateExpedition')?.invalid && this.form.get('dateExpedition')?.touched">
+                    </i> -->
+                    <input type="text" class="form-control"
+                      [class.green-icon]="this.form.get('dateExpedition')?.valid"
+                      [class.red-icon]="this.form.get('dateExpedition')?.invalid && this.form.get('dateExpedition')?.touched"
+                      formControlName="dateExpedition" placeholder="MM/AAAA" maxlength="7"
+                    />
+                  </div>
+                  <div class="col-4 offset-2">
+                    <!-- <i class="fas fa-key icon-key"
+                      [class.green-icon]="this.form.get('cvv')?.valid"
+                      [class.red-icon]="this.form.get('cvv')?.invalid && this.form.get('cvv')?.touched">
+                    </i> -->
+                    <input type="password" class="form-control"
+                      [class.green-icon]="this.form.get('cvv')?.valid"
+                      [class.red-icon]="this.form.get('cvv')?.invalid && this.form.get('cvv')?.touched"
+                      formControlName="cvv" placeholder="CCV" maxlength="3"
+                    />
+                  </div>
                 </div>
-            </div>
-
-            <div class="grupo ccv">
-                <label for="inputCCV">CCV</label>
-                <input type="text" id="inputCCV" maxlength="3">
-            </div>
+              </div>
+              <br class="br">
+              <!-- <button [disabled]="form.invalid" type="submit" class="pagar"><h5>PAGAR</h5></button> -->
+              <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+          </div>
         </div>
-        <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
-    <br>
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="../formulario-pago/formulario.js"></script>
+      </div>
+    </div>
+  </form> 
+</body>
+</html>
+<script>
+  
+</script>
