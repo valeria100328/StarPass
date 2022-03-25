@@ -43,14 +43,19 @@ label {
   margin-right: 10%;
 }
 
-.iconsSocialNetworks a:hover {
-  color: #45046a;
-}
+
 
 .iconsSocialNetworks a {
   color: #ffff;
-  padding-left: 24px;
+  padding-left: 35px;
   margin-top: 20px;
+  border: none;
+  
+}
+
+.iconsSocialNetworks a:hover {
+  color: #45046a;
+  
 }
 
 .iconsSocialNetworks i {

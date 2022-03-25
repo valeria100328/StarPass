@@ -52,7 +52,7 @@ p {
 }
 .iconsSocialNetworks a {
   color: #ffff;
-  padding-left: 24px;
+  padding-left: 40px;
 }
 .iconsSocialNetworks i {
   color: #ffff;
@@ -66,9 +66,14 @@ p {
   background-color: #405d9d;
   color: #fff;
   border-radius: 10px;
+  width: 350px
 }
 .btn-google {
   background-color: #dd4b39;
   color: #fff;
   border-radius: 10px;
+  margin-left: 10px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
 }
