@@ -1,6 +1,6 @@
 export class BoletaGeneral{
     //CRUD
-    _id?: string;
+    _id?: any;
     seccion: string;
     cantidad_unidad: number;
     servicio: number;

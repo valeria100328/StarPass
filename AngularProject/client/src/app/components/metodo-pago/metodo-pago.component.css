@@ -68,6 +68,7 @@ margin-left: 10%;
     background: linear-gradient(180deg, #010038 0%, #872657 100%);
     width: auto;
     height: 880px;
+    cursor: pointer;
 }
 
 h2{

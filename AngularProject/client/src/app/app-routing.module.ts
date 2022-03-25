@@ -39,6 +39,8 @@ const routes: Routes = [
   {path: 'validarcuenta', component: ValidarCuentaComponent},
   { path: 'metodopago', component: MetodoPagoComponent},
   {path: 'carritocompras', component: CarritoComprasComponent},
+  {path: 'crear-compra', component: FormularioRegistroBoletaComponent},
+  {path: 'editar-compra/:id', component: FormularioRegistroBoletaComponent},
   {path: 'formulariopago', component: FormularioPagoComponent},
   {path: 'deportescategorias', component: DeportesCategoriaComponent},
   {path: 'festivalescategoria', component: FestivalesCategoriaComponent},

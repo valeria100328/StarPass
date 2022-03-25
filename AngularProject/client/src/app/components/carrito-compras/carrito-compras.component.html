@@ -1,120 +1,115 @@
 <div class="style">
-    <nav class="navbar navbar-expand-sm navbar-dark menu">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-        <img class="Logo"  src="../../../assets/img/logitipo.png" alt="" width="416" height="66">
-        </a>
+  <nav class="navbar navbar-expand-sm navbar-dark menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          class="Logo"
+          src="../../../assets/img/logitipo.png"
+          alt=""
+          width="416"
+          height="66"
+        />
+      </a>
 
-        <h1 class="title">Carrito De Compras</h1>
+      <h1 class="title">Carrito De Compras</h1>
 
-        <button class="navbar-toggler"
+      <button
+        class="navbar-toggler"
         type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toogle navigation">
-
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toogle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-        </button>
+      </button>
 
-        <nav class="listaMenu">
-            <div class="iconUser"><i class="far fa-user-circle fa-3x" style="color: #F8F8F8; margin-right: 25px"></i></div>
-            <form class="container-fluid justify-content-start">
-            </form>
-        </nav>
+      <nav class="listaMenu">
+        <div class="iconUser">
+          <i
+            class="far fa-user-circle fa-3x"
+            style="color: #f8f8f8; margin-right: 25px"
+          ></i>
         </div>
-    </nav>
-    <div class="container">
+        <form class="container-fluid justify-content-start"></form>
+      </nav>
     </div>
-    <br>
-    <div>
-        <div class="table-striped w-75 my-5 py-2 row flex-row align-items-center shadow-color bg-color">
-            <div class="col-md-8mx-auto">
-            </div>
-            <div class="table-body col-md-0 col-sm-1"></div>
-            <br>
-            <table class="table">
-                <thead>
-              <tr>
-                <th scope="col">Sección - bloque </th>
-                <th scope="col">Diamante - A1 </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="col"> Asientos Asignados </th>
-                <th scope="col"> 1 Boleto </th>
-              </tr>
-            </tbody>
-          </table>
+  </nav>
+  <br /><br />
+  <button class="buttonRegistro">
+    <span routerLink="/formularioregistroboleta">Agregar Nueva Boleteria</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </button>
+  <br>
+  <div class="formularioU">
     
-</div>
+    <br />
+    <h2 class="fw-bold fs-8 text-danger text-center" *ngIf="listaBoletaGeneral.length == 0 "> BOLETA NO CONFIRMADA</h2>
+    <table id="Clientes" *ngIf="listaBoletaGeneral.length > 0">
+      <tr>
+        <th>Sección</th>
+        <th>Cantidad por Unidad</th>
+        <th>Servicio</th>
+        <th>Precio</th>
+      </tr>
 
-    </div>
-    <div>
-<div class="table-striped w-75 my-5 py-2 row flex-row align-items-center shadow-color bg-color">
-    <div class="col-md-8mx-auto">
-    </div>
-    <div class="table-body col-md-0 col-sm-1"></div>
-    <br>
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Tipo</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col">Total X Boleto <br> (Precio xboleto + cargo del Servicio)</th>
-            <th scope="col">Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Entrada</th>
-            <td>1</td>
-            <td>$181.000 <br>(160.000 + 21.000)</td>
-            <td>$181.000</td>
-          </tr>
-          <tr>
-            <th scope="row">Subtotal</th>
-            <td>1</td>
-            <td>  </td>
-            <td>$181.000</td>
-          </tr>
-         
-        </tbody>
-      </table>
-    </div>
-</div>
+      <tr *ngFor="let data_BoletaGeneral of listaBoletaGeneral">
+        <th>{{ data_BoletaGeneral.seccion }}</th>
+        <th>{{ data_BoletaGeneral.cantidad_unidad }}</th>
+        <th>{{ data_BoletaGeneral.servicio }}</th>
+        <th>{{ data_BoletaGeneral.precio }}</th>
+        <th>
+          <!--Routerlink para consumir y alimentar esa bandera en el id de la ruta-->
+          <i
+            class="fa-solid fa-ticket"
+            style="padding-right: 5%"
+            [routerLink]="['/editar-compra', data_BoletaGeneral._id]"
+          ></i>
+          <i
+            class="fab fa-shopify"
+            (click)="venderBoletaGeneral(data_BoletaGeneral._id)"
+          ></i>
+        </th>
+      </tr>
+      
 
-<br>
+      <br />
+    </table>
 
-<div class="card w-75 row flex-row align-items-center shadow-color bg-color">
-    <div class="col-sm-1 mx-auto"text-center>
-    </div>
-    
-    <div class="card-body col-md-1 col-sm-10">
-        <br>
-        <h4 class="card-title text-center" 
-        >METODO DE ENTREGA</h4>
-        <br>
-        
+    <div
+      class="card w-75 row flex-row align-items-center shadow-color bg-color"
+    >
+      <div class="col-sm-1 mx-auto" text-center></div>
+
+      <div class="card-body col-md-1 col-sm-10">
+        <br />
+        <h4 class="card-title text-center">METODO DE ENTREGA</h4>
+        <br />
+
         <p class="card-text lead text-justify">
-            Imprime tu mismo tus boletos en tu casa u oficina. Recibe tus boletos en tu celular.
-            Accede a tu cuenta y descarga tus boletos en archivos de formato PDF, los cuales podras imprimirlos en cualquier
-            impresora, tambien puedes activar la opcion de Super Pass y recibir los boletos en tu celular. Conoce las
-            politicas de compra haciendo click aquí.<br>
-            <i class="fa-solid fa-circle-check fa-3x" style="margin-left:85%;"></i>
-           
-            <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span  routerLink="/metodopago" class="button-text">PAGO</span>
-              </button>
-            
-        </p>
-        <br>
+          Imprime tu mismo tus boletos en tu casa u oficina. Recibe tus boletos
+          en tu celular. Accede a tu cuenta y descarga tus boletos en archivos
+          de formato PDF, los cuales podras imprimirlos en cualquier impresora,
+          tambien puedes activar la opcion de Super Pass y recibir los boletos
+          en tu celular. Conoce las politicas de compra haciendo click aquí.<br />
+          <i
+            class="fa-solid fa-circle-check fa-3x"
+            style="margin-left: 85%"
+          ></i>
 
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span routerLink="/metodopago" class="button-text">PAGO</span>
+          </button>
+        </p>
+        <br />
+      </div>
     </div>
-</div>
+  </div>
 </div>

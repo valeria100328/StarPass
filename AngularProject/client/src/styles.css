@@ -1,4 +1,26 @@
 
+.fa-cash-register{
+    font-size: 1.5rem;
+}
+
+.fa-shopify{
+    font-size: 1.5rem;
+}
+
+.fa-ticket{
+    font-size: 1.5rem;
+
+
+}
+.fa-ticket:hover {
+    color: #010038;
+    font-size: 2.0rem;
+}
+
+.fa-shopify:hover {
+    color: #f6dc87;
+    font-size: 2.0rem;
+}
   
   
   
