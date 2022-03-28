@@ -52,7 +52,7 @@ export class FormularioRegistroBoletaComponent implements OnInit {
         this.router.navigate(['/carritocompras']);
         Swal.fire({
           icon: 'success',
-          title: 'Cambio registrado de la boleta general exitosamente',
+          title: '¡Cambio de la boleta general registrado exitosamente!',
         })
 
       }, error => {
@@ -63,7 +63,7 @@ export class FormularioRegistroBoletaComponent implements OnInit {
           this.router.navigate(['/carritocompras']);
           Swal.fire({
             icon: 'success',
-            title: 'Cambio registrado exitosamente de la boleta general',
+            title: '¡Boleta general registrada exitosamente! ',
           })
 
         }, error => {

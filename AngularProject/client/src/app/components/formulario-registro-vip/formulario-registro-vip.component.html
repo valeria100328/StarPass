@@ -30,7 +30,7 @@
   <br><br><br><br><br>
 <div>
 <div class="contenido w-75" style = "margin-bottom: 50%; margin-left: 15%;">
-<form class="row g-6"  >
+<form class="row g-6" [formGroup]="registroTicketshopFormVip" (ngSubmit)="InfoRegistro()" >
 
   <div class="col-md-6 " style="padding-right: 10px;">
   <label for="seccion_bloqueboleteria" class="form-label">Sección</label>

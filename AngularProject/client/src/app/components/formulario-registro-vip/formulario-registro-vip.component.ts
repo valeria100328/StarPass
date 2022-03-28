@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 import { Router, ActivatedRoute } from '@angular/router';
 import { BoletaVip } from 'src/app/models/boletavip';
 import { BoletaVipService } from 'src/app/services/boleta-vip.service';
-import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-formulario-registro-vip',
@@ -62,7 +62,7 @@ export class FormularioRegistroVipComponent implements OnInit {
           this.router.navigate(['/carritocomprasvip']);
           Swal.fire({
             icon: 'success',
-            title: 'Cambio registrado exitosamente de la boleta general',
+            title: 'Cambio registrado exitosamente de la boleta VIP',
           })
 
         }, error => {

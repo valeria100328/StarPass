@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .titule {
   font-family: "League Gothic", sans-serif;
   color: #ffff;
@@ -47,27 +48,33 @@ p {
   margin-right: 10%;
 }
 
-.iconsSocialNetworks a:hover {
-  color: #45046a;
-  border: none;
-}
-.iconsSocialNetworks a {
-  color: #ffff;
-  padding-left: 40px;
-}
+
 .iconsSocialNetworks i {
   color: #ffff;
+  margin-left: 40px;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
-.form-group {
-  padding: 4px;
+.iconsSocialNetworks i:hover {
+  background-color: #010038;
+  border: none;
 }
+
+
+.form-group {
+  padding: 5px;
+}
+
 .btn-facebook {
-  background-color: #405d9d;
+  background-color: #4363aa;
   color: #fff;
   border-radius: 10px;
   width: 350px
+}
+
+.btn-facebook:hover {
+  background-color: #0c53ee;
 }
 
 .btn-google {
@@ -78,4 +85,8 @@ p {
   width: 350px;
   display: flex;
   justify-content: center;
+}
+
+.btn-google:hover{
+  background-color: #ee240a;
 }

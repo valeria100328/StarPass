@@ -12,7 +12,7 @@
     background-color: #010038;
     background-image: linear-gradient(180deg, #010038 12%, #45046a 50%, #872657 100%);
     ;
-    height: 200vh;
+    height: 100vh;
 
 }
 
@@ -32,10 +32,10 @@
     }
 
     .row:hover{
-        transform: scale(1.05)     
+        transform: scale(1.05)
     }
     .container-fluid:hover{
-        transform: scale(1.05) 
+        transform: scale(1.05)
     }
 
     .navbar {
@@ -45,13 +45,13 @@
         padding-left: 30px;
     }
 
-   
+
     button,
     i {
         color: rgb(199, 189, 207);
     }
 
-  
+
 .table table-dark{
     width: 150px;
     margin-left: auto;
@@ -60,7 +60,7 @@
 .title {
     color: white;
     font-family: "League Gothic", sans-serif;
-    margin-right: 7%; 
+    margin-right: 7%;
 
 }
 
@@ -81,22 +81,22 @@ button {
     border-radius: 30px;
     z-index: 1;
    }
-   
+
    button:hover {
     animation: ani 8s linear infinite;
     border: none;
    }
-   
+
    @keyframes ani {
     0% {
      background-position: 0%;
     }
-   
+
     100% {
      background-position: 400%;
     }
    }
-   
+
    button:before {
     content: '';
     position: absolute;
@@ -110,11 +110,11 @@ button {
     border-radius: 35px;
     transition: 1s;
    }
-   
+
    button:hover::before {
     filter: blur(20px);
    }
-   
+
    button:active {
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
    }
@@ -124,17 +124,17 @@ button {
 .form-control{
     border: .16rem solid;
     height: 45px;
-    
+
 }
 .form-label{
     margin-top: 10px;
     font-weight: bold;
     font-family: "League Gothic", sans-serif;
     color: #fff;
-    
+
 }
 
 
 
 
-    
+
