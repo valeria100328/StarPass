@@ -21,7 +21,7 @@
                 ><i class="fas fa-user fa-2x"></i
               ></span>
             </div>
-            <input [(ngModel)]="loginUser" type="text" class="form-control" placeholder="Correo" />
+            <input [(ngModel)]="loginUser.email" type="text" class="form-control" placeholder="Correo" />
           </div>
           <br />
           <div class="input-group form-group">
@@ -31,7 +31,7 @@
                 ><i class="fas fa-key fa-2x"></i
               ></span>
             </div>
-            <input
+            <input [(ngModel)]="loginUser.password"
               type="password"
               class="form-control"
               placeholder="Contraseña"

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AutenticacionService } from 'src/app/services/autenticacion.service';
+import {FormBuilder} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-validar-cuenta',
@@ -7,9 +9,11 @@ import { AutenticacionService } from 'src/app/services/autenticacion.service';
   styleUrls: ['./validar-cuenta.component.css']
 })
 export class ValidarCuentaComponent implements OnInit {
-  loginUser = {}
+  loginUser:any
 
-  constructor(private autenticacion: AutenticacionService) { }
+  constructor(private fb: FormBuilder,private router: Router, private autenticacion: AutenticacionService) { 
+  this.loginUser = {}
+  }
 
   ngOnInit(): void {
   }
