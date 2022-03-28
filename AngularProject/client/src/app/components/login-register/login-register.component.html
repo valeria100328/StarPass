@@ -22,22 +22,22 @@
                 <div class="form-group">
                     <label for="nombreCompleto">Nombres</label>
                     <input type="name" formControlName="nombreCompleto" class="form-control" id="exampleInputName" aria-describedby="name"
-                        placeholder="nombre Completo">
+                        placeholder="Nombre Completo">
                         <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('nombreCompleto')?.hasError('required') && loginRegisterForm.get('nombreCompleto')?.touched">Escribe tu nombre completo</p>
                 </div>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="apellidoCompleto">Apellidos</label>
                     <input type="lastName" formControlName="apellidoCompleto" class="form-control" id="Inputlastname" aria-describedby="lastName"
                         placeholder="apellido Completo">
                         <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('apellidoCompleto')?.hasError('required') && loginRegisterForm.get('apellidoCompleto')?.touched">Escribe tus apellidos completo</p>
-                </div>
+                </div> -->
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="ciudad">Ciudad</label>
                     <input type="city" formControlName="ciudad"  class="form-control" id="InputCity" aria-describedby="city" placeholder="Ciudad">
                     <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('ciudad')?.hasError('required') && loginRegisterForm.get('ciudad')?.touched"> Escribe tu ciudad</p>
-                </div>
+                </div> -->
 
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
@@ -46,12 +46,12 @@
                         <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('email')?.hasError('required') && loginRegisterForm.get('email')?.touched">Escribe tu correo </p>
                 </div>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="exampleInputEmail1">Confirma tu mail </label>
                     <input type="email" formControlName="confirmaEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Confirma tu Correo">
                         <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('confirmaEmail')?.hasError('required') && loginRegisterForm.get('confirmaEmail')?.touched">confirma tu correo </p>
-                </div>
+                </div> -->
 
                 <div class="form-group">
                     <label for="password">Contraseña</label>
@@ -59,12 +59,12 @@
                     <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('password')?.hasError('required') && loginRegisterForm.get('password')?.touched">Ingresa tu contraseña </p>
                 </div>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="exampleInputPassword1">Confirma tu Contraseña</label>
                     <input type="password" formControlName="confirmaPassword"  class="form-control" id="exampleInputPassword1"
                         placeholder="Confirma Contraseña">
                         <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('confirmaPassword')?.hasError('required') && loginRegisterForm.get('confirmaPassword')?.touched">confirma tu contraseña </p>
-                </div>
+                </div> -->
                 <br>
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
