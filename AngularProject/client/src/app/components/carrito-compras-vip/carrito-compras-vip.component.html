@@ -1,0 +1,116 @@
+<div class="style">
+  <nav class="navbar navbar-expand-sm navbar-dark menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          class="Logo"
+          src="../../../assets/img/logitipo.png"
+          alt=""
+          width="416"
+          height="66"
+        />
+      </a>
+
+      <h1 class="title">Carrito De Compras</h1>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toogle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="listaMenu">
+        <div class="iconUser">
+          <i
+            class="far fa-user-circle fa-3x"
+            style="color: #f8f8f8; margin-right: 25px"
+          ></i>
+        </div>
+        <form class="container-fluid justify-content-start"></form>
+      </nav>
+    </div>
+  </nav>
+  <br /><br />
+  <button class="buttonRegistro">
+    <span routerLink="/formularioregistroboletavip">Agregar Nueva Boleteria</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </button>
+  <br>
+  <div class="formularioU">
+
+    <br />
+    <h2 class="fw-bold fs-8 text-danger text-center" *ngIf="listaBoletaVip.length == 0 "> BOLETA NO CONFIRMADA</h2>
+    <table id="Clientes" *ngIf="listaBoletaVip.length > 0">
+      <tr>
+        <th>Sección</th>
+        <th>Cantidad por Unidad</th>
+        <th>Servicio</th>
+        <th>Precio</th>
+      </tr>
+
+      <tr *ngFor="let data_BoletaVip of listaBoletaVip">
+        <th>{{ data_BoletaVip.seccion }}</th>
+        <th>{{ data_BoletaVip.cantidad_unidad }}</th>
+        <th>{{ data_BoletaVip.servicio }}</th>
+        <th>{{ data_BoletaVip.precio }}</th>
+        <th>
+          <!--Routerlink para consumir y alimentar esa bandera en el id de la ruta-->
+          <i
+            class="fa-solid fa-ticket"
+            style="padding-right: 5%"
+            [routerLink]="['/editar-compra', data_BoletaVip._id]"
+          ></i>
+          <i
+            class="fab fa-shopify"
+            (click)="venderBoletaVip(data_BoletaVip._id)"
+          ></i>
+        </th>
+      </tr>
+
+
+      <br />
+    </table>
+
+    <div
+      class="card w-75 row flex-row align-items-center shadow-color bg-color"
+    >
+      <div class="col-sm-1 mx-auto" text-center></div>
+
+      <div class="card-body col-md-1 col-sm-10">
+        <br />
+        <h4 class="card-title text-center">METODO DE ENTREGA</h4>
+        <br />
+
+        <p class="card-text lead text-justify">
+            Imprime tu mismo tus boletos en tu casa u oficina. Recibe tus boletos
+            en tu celular. Accede a tu cuenta y descarga tus boletos en archivos
+            de formato PDF, los cuales podrás imprimirlos en cualquier impresora,
+            también puedes activar la opción de Súper Pass y recibir los boletos
+            en tu celular. Conoce las políticas de compra haciendo click aquí.<br />
+          <i
+            class="fa-solid fa-circle-check fa-3x"
+            style="margin-left: 85%"
+          ></i>
+
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span routerLink="/metodopago" class="button-text">PAGO</span>
+          </button>
+        </p>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+

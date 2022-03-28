@@ -1,0 +1,399 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+
+.menu{
+
+  background-color: #010038;
+
+}
+
+.Logo{
+  height: 90px;
+  width: 150%;
+}
+.iconUser{
+  margin-right: 18px;
+  margin-top: 2%;
+  color: white;
+}
+  .nav-item{
+      padding: 1px;
+      font-size: 117%;
+      margin-right: 20px;
+  }
+
+  .row:hover{
+      transform: scale(1.05)
+  }
+  .container-fluid:hover{
+      transform: scale(1.05)
+  }
+
+  .navbar {
+      justify-content: space-between;
+      padding-top: .7rem;
+      padding-bottom: .5rem;
+      padding-left: 30px;
+  }
+
+  li{
+      list-style: none;
+      transform: translateX(-21px);
+      text-align: center;
+      transition: all.7;
+      cursor: pointer;
+      font-family: 'PT Serif', serif;
+      font-size: 3%;
+  }
+  button,
+  i {
+      color: rgb(199, 189, 207);
+  }
+
+  h2{
+      font-family: 'PT Serif', serif;
+
+  }
+
+
+.title {
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  margin-right: 3%;
+
+}
+
+body{
+  color:rgb(0, 0, 0);
+  background-color: #000000;
+  font-size: 15px;
+}
+
+
+.table-striped {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px    ;
+  margin-top: 15%;
+  box-shadow: 20px 20px 25px black;
+  -webkit-border-radius: 10px 10px 10px 10px    ;
+  -moz-border-radius: 10px 10px 10px 10px    ;
+  -ms-border-radius: 10px 10px 10px 10px    ;
+  -o-border-radius: 10px 10px 10px 10px    ;
+}
+.table-striped th{
+  color: #45046a;
+  font-family: "League Gothic", sans-serif;
+}
+
+.table-striped th:hover{
+  color:#872657;
+}
+.card-body h4{
+  margin-right: 9%;
+  color: #010038;
+  font-weight: bold;
+  font-family: "League Gothic", sans-serif;
+}
+
+.card-body h4:hover{
+  color:#872657;
+}
+.card-body p{
+  color:black;
+  font-weight: 400;
+  font-family: "League Gothic", sans-serif;
+  margin-right: 90px;
+
+}
+
+
+
+
+.card {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f0b6d3;
+  margin-top: 4%;
+  border-radius: 10px 10px 10px 10px    ;
+  box-shadow: 20px 20px 25px black;
+}
+
+.style {
+  background-color: #010038;
+  background-image: linear-gradient(180deg, #010038 12%, #45046a 50%, #872657 100%);
+  height: 990px;
+}
+.card-text i{
+  color:indianred
+
+
+}
+.card-text i:hover{
+  color: #47a13b;
+}
+.btn{
+  font-weight: 600;
+}
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+
+ }
+
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+ }
+
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+ button:hover .circle {
+  width: 100%;
+ }
+
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+
+ button:hover .button-text {
+  color: #fff;
+ }
+ .buttonRegistro {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  float: right;
+  margin-right: 0px;
+  color:#ffffff;
+  margin-right: 13%;
+  font-family: "League Gothic", sans-serif;
+  font-weight: bold;
+ }
+
+ .buttonRegistro:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #872657;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+
+ .buttonRegistro span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+ }
+
+ .buttonRegistro svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #070707;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+
+ .buttonRegistro:hover:before {
+  width: 100%;
+  background: rgb(153, 93, 128);
+ }
+
+ .buttonRegistro:hover svg {
+  transform: translateX(0);
+ }
+
+ .buttonRegistro:active {
+  transform: scale(0.95);
+ }
+
+
+
+ /*table*/
+ #Clientes {
+font-family: 'Quicksand', sans-serif;
+border-collapse: collapse;
+width: 95%;
+align-items: center;
+margin:2%;
+}
+
+#Clientes td, #Clientes th {
+border: 1px solid #ddd;
+padding: 1px;
+}
+
+#Clientes tr:nth-child(even){background-color: #f2f2f2;}
+
+#Clientes tr:hover {background-color: #ddd;}
+
+#Clientes th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: #872657;
+color: white;
+box-shadow: 0px 0px 30px #220335, -13px -13px 20px #220335;
+}
+
+.titlelist{
+  margin-right: 15%;
+  font-size: 45px;
+  font-weight:100;
+  font-family: 'Pacifico', cursive;
+  color: #570530;
+  margin-left: 5%;
+
+}
+.titlelist:hover {
+  color: rgb(195, 86, 86);
+}
+
+.buttonRegistro {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  float: right;
+  margin-right: 0px;
+  color:#020202;
+  margin-right: 5%;
+ }
+
+ .buttonRegistro:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #872657;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+
+ .buttonRegistro span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+ }
+
+ .buttonRegistro svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #fff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+
+ .buttonRegistro:hover:before {
+  width: 100%;
+  background: rgb(165, 92, 135);
+ }
+
+ .buttonRegistro:hover svg {
+  transform: translateX(0);
+ }
+
+ .buttonRegistro:active {
+  transform: scale(0.95);
+ }

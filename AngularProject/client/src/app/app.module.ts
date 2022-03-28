@@ -30,6 +30,9 @@ import { FormularioRegistroBoletaComponent } from './components/formulario-regis
 import { FestivalesCategoriaComponent } from './components/festivales-categoria/festivales-categoria.component';
 import { CulturalesCategoriaComponent } from './components/culturales-categoria/culturales-categoria.component';
 import { AutenticacionService } from './services/autenticacion.service';
+import { FormularioPagoVipComponent } from './components/formulario-pago-vip/formulario-pago-vip.component';
+import { FormularioRegistroVipComponent } from './components/formulario-registro-vip/formulario-registro-vip.component';
+import { CarritoComprasVipComponent } from './components/carrito-compras-vip/carrito-compras-vip.component';
 
 
 @NgModule({
@@ -58,6 +61,9 @@ import { AutenticacionService } from './services/autenticacion.service';
     FormularioRegistroBoletaComponent,
     FestivalesCategoriaComponent,
     CulturalesCategoriaComponent,
+    FormularioPagoVipComponent,
+    FormularioRegistroVipComponent,
+    CarritoComprasVipComponent,
   ],
   imports: [
     BrowserModule,

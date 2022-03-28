@@ -10,7 +10,7 @@
 .menu{
 
     background-color: #010038;
-    
+
 }
 
 .Logo{
@@ -29,10 +29,10 @@
     }
 
     .row:hover{
-        transform: scale(1.05)     
+        transform: scale(1.05)
     }
     .container-fluid:hover{
-        transform: scale(1.05) 
+        transform: scale(1.05)
     }
 
     .navbar {
@@ -65,7 +65,7 @@
 .title {
     color: white;
     font-family: "League Gothic", sans-serif;
-    margin-right: 3%; 
+    margin-right: 3%;
 
 }
 
@@ -129,12 +129,11 @@ body{
 .style {
     background-color: #010038;
     background-image: linear-gradient(180deg, #010038 12%, #45046a 50%, #872657 100%);
-
     height: 990px;
 }
 .card-text i{
     color:indianred
-    
+
 
 }
 .card-text i:hover{
@@ -157,14 +156,14 @@ button {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
-    
+
    }
-   
+
    button.learn-more {
     width: 12rem;
     height: auto;
    }
-   
+
    button.learn-more .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
@@ -175,7 +174,7 @@ button {
     background: #282936;
     border-radius: 1.625rem;
    }
-   
+
    button.learn-more .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
@@ -184,7 +183,7 @@ button {
     margin: auto;
     background: #fff;
    }
-   
+
    button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
@@ -192,7 +191,7 @@ button {
     height: 0.125rem;
     background: none;
    }
-   
+
    button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "";
@@ -204,7 +203,7 @@ button {
     border-right: 0.125rem solid #fff;
     transform: rotate(45deg);
    }
-   
+
    button.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
@@ -220,16 +219,16 @@ button {
     text-align: center;
     text-transform: uppercase;
    }
-   
+
    button:hover .circle {
     width: 100%;
    }
-   
+
    button:hover .circle .icon.arrow {
     background: #fff;
     transform: translate(1rem, 0);
    }
-   
+
    button:hover .button-text {
     color: #fff;
    }
@@ -247,7 +246,7 @@ button {
     font-family: "League Gothic", sans-serif;
     font-weight: bold;
    }
-   
+
    .buttonRegistro:before {
     content: "";
     position: absolute;
@@ -260,7 +259,7 @@ button {
     height: 45px;
     transition: all 0.3s ease;
    }
-   
+
    .buttonRegistro span {
     position: relative;
     font-family: "Ubuntu", sans-serif;
@@ -269,7 +268,7 @@ button {
     letter-spacing: 0.05em;
     color: #fff;
    }
-   
+
    .buttonRegistro svg {
     position: relative;
     top: 0;
@@ -282,16 +281,16 @@ button {
     transform: translateX(-5px);
     transition: all 0.3s ease;
    }
-   
+
    .buttonRegistro:hover:before {
     width: 100%;
     background: rgb(153, 93, 128);
    }
-   
+
    .buttonRegistro:hover svg {
     transform: translateX(0);
    }
-   
+
    .buttonRegistro:active {
     transform: scale(0.95);
    }
@@ -350,7 +349,7 @@ button {
     color:#020202;
     margin-right: 5%;
    }
-   
+
    .buttonRegistro:before {
     content: "";
     position: absolute;
@@ -363,7 +362,7 @@ button {
     height: 45px;
     transition: all 0.3s ease;
    }
-   
+
    .buttonRegistro span {
     position: relative;
     font-family: "Ubuntu", sans-serif;
@@ -372,7 +371,7 @@ button {
     letter-spacing: 0.05em;
     color: #fff;
    }
-   
+
    .buttonRegistro svg {
     position: relative;
     top: 0;
@@ -385,16 +384,16 @@ button {
     transform: translateX(-5px);
     transition: all 0.3s ease;
    }
-   
+
    .buttonRegistro:hover:before {
     width: 100%;
     background: rgb(165, 92, 135);
    }
-   
+
    .buttonRegistro:hover svg {
     transform: translateX(0);
    }
-   
+
    .buttonRegistro:active {
     transform: scale(0.95);
    }

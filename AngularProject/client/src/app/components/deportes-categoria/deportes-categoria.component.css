@@ -63,6 +63,15 @@ h3 {
   height: 120px;
   margin-left: 30px;
   margin-bottom: 3%;
+  transition: all 0.25s;
+  box-shadow: 20px 20px 25px black;
+  background-color: #010038;
+  cursor: pointer;
+}
+
+.concierto img:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 time.icon
@@ -185,7 +194,7 @@ footer{
   padding: 25px 1px;
   background-image: url(../../../assets/img/background-footer.svg);
   background-size: cover;
-  
+
 }
 
 .container__footer{
@@ -195,21 +204,21 @@ footer{
   max-width: 1200px;
   margin: auto;
   margin-top: 100px;
-  
+
 }
 
 .box__footer{
   display: flex;
   flex-direction: column;
   padding: 40px;
-  
-  
+
+
 
 }
 
 .box__footer .logo img{
   width: 180px;
-  
+
 }
 
 
@@ -238,12 +247,12 @@ footer{
   color: black;
   font-weight: 600;
   font-family: "League Gothic", sans-serif;
-  
-  
+
+
 }
 .box__footer h3{
   margin-top: 7%;
-  font-weight: 700; 
+  font-weight: 700;
   color: black;
   font-family: "League Gothic", sans-serif;
 
@@ -256,7 +265,7 @@ footer{
   color: black;
   font-weight: 700;
   text-decoration: none;
- 
+
 }
 
 
@@ -266,7 +275,7 @@ footer{
 
 }
 .iconsSocialNetworks a{
-  
+
   color: #872657 ;
   padding-left: 30px;
 }

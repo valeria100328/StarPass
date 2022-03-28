@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
   }
-  
+
 .pageHome{
     background-color: #010038;
     width: 100%;
     height: auto;
 }
-  
+
 section{
     min-height: 824px;
     background-color: #010038;
@@ -24,8 +24,8 @@ section{
     width: 500px;
     padding: 40px;
     margin-left: 98px;
-    
-   
+
+
 }
 
 .informationEvent-item{
@@ -39,13 +39,13 @@ section{
     margin-left: 20px;
     padding: 40px;
     float:right;
-    
+
   }
 
 .card-body{
     font-family: "League Gothic", sans-serif;;
     color: #ffff;
-    
+
 }
 .card-body .card-title {
 display: flex;
@@ -74,8 +74,10 @@ align-items: center;
     color: #ffff;
     margin-left: 190px;
 }
+
 .table tr:hover{
-color: #45046A;
+background-color: #45046A;
+cursor: pointer;
 }
 
 
@@ -121,7 +123,7 @@ color: #45046A;
     float: left;
     display: flex;
     align-content: left;
-} 
+}
 
 .card-titlemap{
     font-family: "League Gothic", sans-serif;;
@@ -178,7 +180,7 @@ footer{
     padding: 25px 1px;
     background-image: url(../../../assets/img/background-footer.svg);
     background-size: cover;
-    
+
 }
 
 .container__footer{
@@ -188,21 +190,21 @@ footer{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
-    
+
 }
 
 .box__footer{
     display: flex;
     flex-direction: column;
     padding: 40px;
-    
-    
-  
+
+
+
 }
 
 .box__footer .logo img{
     width: 180px;
-    
+
 }
 
 
@@ -231,12 +233,12 @@ footer{
     color: black;
     font-weight: 600;
     font-family: "League Gothic", sans-serif;
-    
-    
+
+
 }
 .box__footer h3{
     margin-top: 7%;
-    font-weight: 700; 
+    font-weight: 700;
     color: black;
     font-family: "League Gothic", sans-serif;
 
@@ -249,7 +251,7 @@ footer{
     color: black;
     font-weight: 700;
     text-decoration: none;
-   
+
 }
 
 
@@ -259,7 +261,7 @@ footer{
 
 }
 .iconsSocialNetworks a{
-    
+
     color: #872657 ;
     padding-left: 30px;
 }

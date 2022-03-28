@@ -1,4 +1,6 @@
 import { Component,Input, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-deportes-categoria',
@@ -14,5 +16,16 @@ export class DeportesCategoriaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  en_contruccion() {
+    Swal.fire({
+        imageUrl: '../../../assets/img/boton-x.png',
+        imageWidth: 150,
+        imageHeight: 150,
+        title: '¡EVENTO CANCELADO!',
+        confirmButtonColor: '#990000',
+        footer: '<a href="">Why do I have this issue?</a>'
+    })
+}
 
 }

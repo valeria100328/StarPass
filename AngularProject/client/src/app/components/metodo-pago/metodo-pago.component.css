@@ -1,8 +1,8 @@
 .menu{
 
     background-color: #010038;
-    
-    
+
+
 }
 
 .Logo{
@@ -21,10 +21,10 @@
     }
 
     .row:hover{
-        transform: scale(1.05)     
+        transform: scale(1.05)
     }
     .container-fluid:hover{
-        transform: scale(1.05) 
+        transform: scale(1.05)
     }
 
     .navbar {
@@ -57,7 +57,7 @@
 .title {
     color: white;
     font-family: "League Gothic", sans-serif;
-    margin-right: 33px; 
+    margin-right: 33px;
 
 }
 
@@ -67,7 +67,7 @@ margin-left: 10%;
 
 }
 .conatiner{
-    background: linear-gradient(180deg, #010038 0%, #872657 100%);
+    background: linear-gradient(180deg, #010038 12%, #45046a 50%, #872657 100%);
     width: auto;
     height: 880px;
     cursor: pointer;
@@ -88,7 +88,7 @@ h2{
     font-family: "League Gothic", sans-serif;
 
 }
-  
+
   .flex-container > div {
     background-color: #010038;
     color: white;
@@ -102,7 +102,7 @@ h2{
     margin-top: 4%;
     box-shadow: 20px 20px 25px black;
     font-family: "League Gothic", sans-serif;
- 
+
 
   }
 img{

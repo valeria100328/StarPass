@@ -12,7 +12,7 @@
             </div>
             <div class="LoginSocial" >
                 <a  href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank"  class="btn btn-block btn-google" > <i class="fab fa-google"></i> Login via Google</a>
-                
+
                 <a  href="https://www.facebook.com/" target="_blank" class="btn btn-block btn-facebook" style="
                 margin-left: 10px;"> <i class="fab fa-facebook-f"></i> Login via
                     facebook</a>
@@ -23,14 +23,14 @@
                     <label for="nombreCompleto">Nombres</label>
                     <input type="name" formControlName="nombreCompleto" class="form-control" id="exampleInputName" aria-describedby="name"
                         placeholder="nombre Completo">
-                        <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('nombreCompleto')?.hasError('required') && loginRegisterForm.get('nombreCompleto')?.touched">Escribe tu nombre completo</p> 
+                        <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('nombreCompleto')?.hasError('required') && loginRegisterForm.get('nombreCompleto')?.touched">Escribe tu nombre completo</p>
                 </div>
 
                 <div class="form-group">
                     <label for="apellidoCompleto">Apellidos</label>
                     <input type="lastName" formControlName="apellidoCompleto" class="form-control" id="Inputlastname" aria-describedby="lastName"
                         placeholder="apellido Completo">
-                        <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('apellidoCompleto')?.hasError('required') && loginRegisterForm.get('apellidoCompleto')?.touched">Escribe tus apellidos completo</p> 
+                        <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('apellidoCompleto')?.hasError('required') && loginRegisterForm.get('apellidoCompleto')?.touched">Escribe tus apellidos completo</p>
                 </div>
 
                 <div class="form-group">
@@ -50,7 +50,7 @@
                     <label for="exampleInputEmail1">Confirma tu mail </label>
                     <input type="email" formControlName="confirmaEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Confirma tu Correo">
-                        <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('confirmaEmail')?.hasError('required') && loginRegisterForm.get('confirmaEmail')?.touched">confirma tu correo </p>    
+                        <p class="fw-bold text-danger" *ngIf="loginRegisterForm.get('confirmaEmail')?.hasError('required') && loginRegisterForm.get('confirmaEmail')?.touched">confirma tu correo </p>
                 </div>
 
                 <div class="form-group">

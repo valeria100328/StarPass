@@ -16,9 +16,9 @@ export class FormularioRegistroBoletaComponent implements OnInit {
   //Creamos nuestro atributo
   soloNumeros = /^([0-9])*$/;
   idDatBoletaGeneral: string| null
-  
-  
-  
+
+
+
   constructor(private fb: FormBuilder, private router: Router, private _boletaGeneralServices: BoletaGeneralService, private idBoletaGeneralPath: ActivatedRoute) {
     this.registroTicketshopForm = this.fb.group({
       seccion: ['General',Validators.required],
@@ -32,7 +32,7 @@ export class FormularioRegistroBoletaComponent implements OnInit {
 
     ngOnInit(): void {
       this.accionSolicitada()
-     
+
     }
 
   //capturamos la informacion
@@ -63,19 +63,19 @@ export class FormularioRegistroBoletaComponent implements OnInit {
           this.router.navigate(['/carritocompras']);
           Swal.fire({
             icon: 'success',
-            title: 'Cambio reguistrado exitosamente de la boleta general',
+            title: 'Cambio registrado exitosamente de la boleta general',
           })
-  
+
         }, error => {
           console.log(error)
         })
-  
+
       }
       console.log(data_boletaGeneral)
 
       }
-      
-  
+
+
     //Actualizar  po medio de un ido crear
     accionSolicitada(){
       if(this.idDatBoletaGeneral !== null){

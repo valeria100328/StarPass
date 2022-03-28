@@ -2,18 +2,19 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .carousel-inner {
     width: 100%;
     height: 420px;
   }
-  
+
   .pageHome {
     background-color: #010038;
+    /* background-image: linear-gradient(180deg, #010038 12%, #45046a 50%, #872657 100%); */
     width: 100%;
     height: auto;
   }
-  
+
   /* SEPARADOR HEADER */
   .separador h1 {
     background-color: #45046A;
@@ -26,7 +27,7 @@
     font-family: "League Gothic", sans-serif;
     font-weight: 700;
   }
-  
+
   /* SEPARADOR PROCESO DE COMPRA */
   .title {
     font-family: "League Gothic", sans-serif;
@@ -42,7 +43,7 @@
     width: 100%;
     text-align: center;
   }
-  
+
   /* TEXTO DESCRIPCIÓN DEL CONCIERTO */
   .texto {
     color: #ffffff;
@@ -51,7 +52,7 @@
     text-align: center;
     font-family: "League Gothic", sans-serif;
   }
-  
+
   /* TITULO SELECCIONA TU SECCION */
   .selecciona-asiento h1 {
     color: #fff;
@@ -62,7 +63,7 @@
     font-weight: 700;
     margin-bottom: 20px;
   }
-  
+
   /* RECUADRO SECCION DIAMANTE */
   .diamante {
     color: #fff;
@@ -77,17 +78,17 @@
     font-family: "League Gothic", sans-serif;
     cursor: pointer;
   }
-  
+
   .diamante h2 {
     margin-left: 40px;
     font-weight: 700;
   }
-  
+
   .diamante:hover {
     background-color: #45046A;
-  
+
   }
-  
+
   /* RECUADRO SECCION VIP */
   .vip {
     color: black;
@@ -101,18 +102,18 @@
     font-family: "League Gothic", sans-serif;
     cursor: pointer;
   }
-  
+
   .vip h2 {
     font-weight: 700;
     margin-right: 40px;
   }
-  
+
   .vip:hover {
     background-color: #872657;
     color: #fff;
-  
+
   }
-  
+
   .img {
     display: flex;
     justify-content: center;
@@ -120,42 +121,42 @@
     margin-top: 20px;
     cursor: pointer;
   }
-  
+
   img{
     width: 30%;
     border-radius: 15px;
   }
-  
+
   img:hover{
     width: 30%;
     border-radius: 15px;
     transform: scale(1.10);
   }
-  
+
   .electronic-ticket {
     color: #fff;
     margin-left: 20px;
   }
-  
-  
+
+
   /* Footer*/
   :root{
     --color-esqueleto:#EFF3F5;
   }
-  
+
   header{
     width: 100%;
     height: 60px;
     background: var(--color-esqueleto);
   }
-  
+
   .cover{
     width: 100%;
     height: 500px;
     background: var(--color-esqueleto);
     margin-top: 20px;
   }
-  
+
   .container__article{
     max-width: 1000px;
     padding: 0px 20px;
@@ -165,25 +166,25 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .container__article .box__article{
     width: 200px;
     height: 250px;
     background: var(--color-esqueleto);
     margin: 20px;
   }
-  
+
   /*Aquí debajo va el FOOTER*/
-  
+
   footer{
     width: 100%;
     height: 20%;
     padding: 25px 1px;
     background-image: url(../../../assets/img/background-footer.svg);
     background-size: cover;
-  
+
   }
-  
+
   .container__footer{
     display: flex;
     flex-wrap: wrap;
@@ -191,25 +192,25 @@
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
-  
+
   }
-  
+
   .box__footer{
     display: flex;
     flex-direction: column;
     padding: 40px;
-  
-  
-  
+
+
+
   }
-  
+
   .box__footer .logo img{
     width: 180px;
-  
+
   }
-  
-  
-  
+
+
+
   .box__footer .terms{
     max-width: 350px;
     margin-top: 20px;
@@ -218,7 +219,7 @@
     font-size: 18px;
     font-family: "League Gothic", sans-serif;
   }
-  
+
   .companytext{
     max-width: 350px;
     margin-top: 20px;
@@ -226,62 +227,62 @@
     color: black;
     font-size: 18px;
     font-family: "League Gothic", sans-serif;
-  
+
   }
-  
+
   .box__footer h2{
     margin-bottom: 30px;
     color: black;
     font-weight: 600;
     font-family: "League Gothic", sans-serif;
-  
-  
+
+
   }
   .box__footer h3{
     margin-top: 7%;
     font-weight: 700;
     color: black;
     font-family: "League Gothic", sans-serif;
-  
-  
+
+
   }
-  
+
   .company{
     margin-top: 50px;
     margin-bottom: 6px;
     color: black;
     font-weight: 700;
     text-decoration: none;
-  
+
   }
-  
-  
+
+
   .iconsSocialNetworks a:hover{
     color: #45046A;
-  
-  
+
+
   }
   .iconsSocialNetworks a{
-  
+
     color: #872657 ;
     padding-left: 30px;
   }
-  
+
   .box__copyright{
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
   }
-  
+
   .box__copyright p{
     margin-top: 20px;
     font-weight: 400;
     color: rgb(17, 17, 17);
     font-family: "League Gothic", sans-serif;
-  
+
   }
-  
+
   .box__copyright hr{
     border: none;
     height: 1px;

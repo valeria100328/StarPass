@@ -1,0 +1,77 @@
+<div class="contentticketregrister">
+  <nav class="navbar navbar-expand-sm navbar-dark menu">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <img class="Logo"  src="../../../assets/img/logitipo.png" alt="" width="416" height="66">
+      </a>
+
+      <h1 class="title">Registro Boleteria</h1>
+
+      <button class="navbar-toggler"
+      type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toogle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="listaMenu">
+          <div class="iconUser"><i class="far fa-user-circle fa-3x" style="color: #F8F8F8; margin-right: 25px"></i></div>
+          <form class="container-fluid justify-content-start">
+          </form>
+      </nav>
+      </div>
+  </nav>
+
+
+  <br><br><br><br><br>
+<div>
+<div class="contenido w-75" style = "margin-bottom: 50%; margin-left: 15%;">
+<form class="row g-6"  >
+
+  <div class="col-md-6 " style="padding-right: 10px;">
+  <label for="seccion_bloqueboleteria" class="form-label">Sección</label>
+   <input [readonly]="true" type="text" formControlName = "seccion" class="form-control">
+  <!--Mensaje-->
+    <p class="fw-bold text-danger"  *ngIf="registroTicketshopFormVip.get('seccion')?.hasError('required') && registroTicketshopFormVip.get('seccion')?.touched" >Se requiere la sección para agregar al carrito de compras</p>
+  </div>
+
+
+  <div class="col-md-6" style="padding-left: 10px;">
+      <label for="cantidad_unidadboleteria"
+      class="form-label">Cantidad por unidad</label>
+      <input [readonly]="true" type="text" formControlName= "cantidad_unidad" class="form-control">
+      <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('cantidad_unidad')?.hasError('required') && registroTicketshopFormVip.get('cantidad_unidad')?.touched">Se requiere la cantidad por unidad de boletas para reservar</p>
+      <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('cantidad_unidad')?.hasError('pattern')">El precio no es valido, debe ser un número</p>
+  </div>
+
+  <div class="col-md-6" style="padding-right: 10px;;">
+      <label for="servicio_asignadosboleteria"
+      class="form-label">Servicio</label>
+      <input [readonly]="true" type="text" formControlName= "servicio" class="form-control">
+      <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('servicio')?.hasError('required') && registroTicketshopFormVip.get('servicio')?.touched">Se requiere dar una bonificación de servicio para finaliar la reserva</p>
+      <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('servicio')?.hasError('pattern')">El precio no es valido, debe ser un número</p>
+  </div>
+
+
+  <div class="col-md-6" style="padding-left: 10px;">
+      <label for="precio_asignadosboleteria"
+      class="form-label">Precio</label>
+      <input [readonly]="true" type="text" formControlName= "precio" class="form-control">
+      <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('precio')?.hasError('required') && registroTicketshopFormVip.get('precio')?.touched">Se requiere el precio de la boleta para tener una reserva exitosa</p>
+      <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('precio')?.hasError('pattern')" >El precio no es valido, debe ser un número</p>
+  </div>
+
+  <div class="col-16">
+    <!--  <button routerLink="/carritocompras" type="submit" class="btn btn-primary" [disabled]="registroTicketshopForm.invalid" >Confirmar</button>-->
+  <button type="submit" class="btn btn-primary">Confirmar</button>
+  </div>
+
+</form>
+</div>
+</div>
+</div>
+

@@ -36,7 +36,7 @@
   margin: auto;
   margin-bottom: 40px;
   margin-bottom: -30px;
- 
+
 }
 
 .container .card {
@@ -108,19 +108,19 @@ font-family: "League Gothic", sans-serif;
     margin-top: 14%;
     height: 5%;
     padding: 20px;
-   
+
 
    }
-   
+
    .vieweventbutton:hover {
     box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
     transition-delay: 0.6s;
    }
-   
+
    .vieweventbutton span {
     position: absolute;
    }
-   
+
    .vieweventbutton span:nth-child(1) {
     top: 0;
     left: -100%;
@@ -128,12 +128,12 @@ font-family: "League Gothic", sans-serif;
     height: 2px;
     background: linear-gradient(90deg, transparent, #872657);
    }
-   
+
    .vieweventbutton:hover span:nth-child(1) {
     left: 100%;
     transition: 0.7s;
    }
-   
+
    .vieweventbutton span:nth-child(3) {
     bottom: 0;
     right: -100%;
@@ -141,13 +141,13 @@ font-family: "League Gothic", sans-serif;
     height: 2px;
     background: linear-gradient(90deg, transparent, #001eff);
    }
-   
+
    .vieweventbutton:hover span:nth-child(3) {
     right: 100%;
     transition: 0.7s;
     transition-delay: 0.35s;
    }
-   
+
    .vieweventbutton span:nth-child(2) {
     top: -100%;
     right: 0;
@@ -155,13 +155,13 @@ font-family: "League Gothic", sans-serif;
     height: 100%;
     background: linear-gradient(180deg, transparent, #ae00ff);
    }
-   
+
    .vieweventbutton:hover span:nth-child(2) {
     top: 100%;
     transition: 0.7s;
     transition-delay: 0.17s;
    }
-   
+
    .vieweventbutton span:nth-child(4) {
     bottom: -100%;
     left: 0;
@@ -169,13 +169,13 @@ font-family: "League Gothic", sans-serif;
     height: 100%;
     background: linear-gradient(360deg, transparent, #001eff);
    }
-   
+
    .vieweventbutton:hover span:nth-child(4) {
     bottom: 100%;
     transition: 0.7s;
     transition-delay: 0.52s;
    }
-   
+
    .vieweventbutton:active {
     background: #872657;
     background: linear-gradient(to top right, #ae00af, #001eff);
@@ -183,10 +183,10 @@ font-family: "League Gothic", sans-serif;
     box-shadow: 0 0 8px #872657, 0 0 8px #001eff, 0 0 8px #872657;
     transition: 0.1s;
    }
-   
-   .vieweventbutton:active span:nth-child(1) 
-   span:nth-child(2) 
-   span:nth-child(2) 
+
+   .vieweventbutton:active span:nth-child(1)
+   span:nth-child(2)
+   span:nth-child(2)
    span:nth-child(2) {
     transition: none;
     transition-delay: none;
@@ -235,7 +235,7 @@ footer{
     padding: 25px 1px;
     background-image: url(../../../assets/img/background-footer.svg);
     background-size: cover;
-    
+
 }
 
 .container__footer{
@@ -245,21 +245,21 @@ footer{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
-    
+
 }
 
 .box__footer{
     display: flex;
     flex-direction: column;
     padding: 40px;
-    
-    
-  
+
+
+
 }
 
 .box__footer .logo img{
     width: 180px;
-    
+
 }
 
 
@@ -288,12 +288,12 @@ footer{
     color: black;
     font-weight: 600;
     font-family: "League Gothic", sans-serif;
-    
-    
+
+
 }
 .box__footer h3{
     margin-top: 7%;
-    font-weight: 700; 
+    font-weight: 700;
     color: black;
     font-family: "League Gothic", sans-serif;
 
@@ -306,7 +306,7 @@ footer{
     color: black;
     font-weight: 700;
     text-decoration: none;
-   
+
 }
 
 
@@ -316,7 +316,7 @@ footer{
 
 }
 .iconsSocialNetworks a{
-    
+
     color: #872657 ;
     padding-left: 30px;
 }
