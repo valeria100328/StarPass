@@ -12,11 +12,13 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  loginUser: any
   loginForm: FormGroup;
   validacionEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   //La que coge nuestros datos
-  loginUser = {}
+ 
   constructor(private fb: FormBuilder,private router: Router, private autenticacion: AutenticacionService) {
+    this.loginUser = {}
     this.loginForm= this.fb.group({
       usuario: ['',[Validators.required, Validators.pattern(this.validacionEmail)]],
       password: ['', Validators.required]
