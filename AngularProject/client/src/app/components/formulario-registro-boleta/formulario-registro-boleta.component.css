@@ -13,6 +13,8 @@
     background-image: linear-gradient(180deg, #010038 12%, #45046a 50%, #872657 100%);
     ;
     height: 100vh;
+    overflow-y:hidden;
+    overflow-x:hidden;
 
 }
 

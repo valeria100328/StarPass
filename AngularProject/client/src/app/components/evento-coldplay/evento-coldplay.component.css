@@ -287,3 +287,18 @@ footer{
 .box__footer logo{
     margin-bottom:  100px;
 }
+.viewEvent-img:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 20px 5px #FADB5E;
+}
+.viewEvent-img{
+    height: 670px;
+    width: 550px;
+    padding: 40px;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: all 0.25s;
+    box-shadow: 20px 20px 25px black;
+    background-color: #010038;
+
+}
