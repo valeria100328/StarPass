@@ -59,8 +59,8 @@ h3 {
 }
 
 .concierto img {
-  width: 300px;
-  height: 120px;
+  width: 355px;
+  height: 165px;
   margin-left: 30px;
   margin-bottom: 3%;
   transition: all 0.25s;
@@ -90,6 +90,7 @@ time.icon
   transform: rotate(0deg) skewY(0deg);
   transform-origin: 50% 10%;
   transform-origin: 50% 10%;
+
 }
 
 time.icon *
