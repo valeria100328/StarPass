@@ -15,7 +15,7 @@ h5{
 }
 .carousel-item img{
     width: 100%;
-    height: 550px;
+    height: 400px;
 }
 
 
@@ -45,7 +45,7 @@ h5{
     width: 100%;
     height: 460px;
     box-shadow: 0 0px 100px #45046A;
-    
+
 }
 
 /*Aquí debajo va el FOOTER*/
@@ -56,7 +56,7 @@ footer{
     padding: 25px 1px;
     background-image: url(../../../assets/img/background-footer.svg);
     background-size: cover;
-    
+
 }
 
 .container__footer{
@@ -66,21 +66,21 @@ footer{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
-    
+
 }
 
 .box__footer{
     display: flex;
     flex-direction: column;
     padding: 40px;
-    
-    
-  
+
+
+
 }
 
 .box__footer .logo img{
     width: 180px;
-    
+
 }
 
 
@@ -109,12 +109,12 @@ footer{
     color: black;
     font-weight: 600;
     font-family: "League Gothic", sans-serif;
-    
-    
+
+
 }
 .box__footer h3{
     margin-top: 7%;
-    font-weight: 700; 
+    font-weight: 700;
     color: black;
     font-family: "League Gothic", sans-serif;
 
@@ -127,7 +127,7 @@ footer{
     color: black;
     font-weight: 700;
     text-decoration: none;
-   
+
 }
 
 
@@ -137,7 +137,7 @@ footer{
 
 }
 .iconsSocialNetworks a{
-    
+
     color: #872657 ;
     padding-left: 30px;
 }

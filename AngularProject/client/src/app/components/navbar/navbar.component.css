@@ -5,6 +5,7 @@
 
 .menu{
     background-color:#010038;
+
 }
 
 .listaMenu{
@@ -30,10 +31,20 @@
 .Logo{
     height: 90px;
     width: 150%;
+
 }
+
+.listaMenu .iconstar i {
+  color: #fadb5b;
+
+}
+
+.iconstar {
+  margin-right: 640px;
+}
+
 .iconUser{
     margin-right: 18px;
-    margin-top: 2%;
     color: white;
 }
 .butoncrearCuenta{
@@ -46,11 +57,6 @@
     font-weight: bold;
     font-family: 'League Gothic', sans-serif;
 }
-
-
-
-
-
 
     .nav-item{
         padding: 1px;
@@ -89,6 +95,7 @@
         font-family: 'PT Serif', serif;
         font-size: 3%;
     }
+
     button,
     i {
         color: rgb(199, 189, 207);

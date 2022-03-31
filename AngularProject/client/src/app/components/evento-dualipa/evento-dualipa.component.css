@@ -15,17 +15,24 @@ section{
 }
 
 .viewEvent{
-    padding: 40px;
+    padding: 20px;
     width: 100%;
     position: relative;
  }
 .viewEvent-img{
-    height: 685px;
-    width: 500px;
+    height: 670px;
+    width: 550px;
     padding: 40px;
-    margin-left: 98px;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: all 0.25s;
+    box-shadow: 20px 20px 25px black;
+    background-color: #010038;
+}
 
-
+.viewEvent-img:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 20px 5px #FADB5E;
 }
 
 .informationEvent-item{
@@ -34,7 +41,7 @@ section{
     box-shadow:  2px 2px 2px #73204a,
                  -2px -2px 2px #9b2c64;
     width: 46%;
-    height: 800px;
+    height: 650px;
     margin: 56px;
     margin-left: 20px;
     padding: 40px;
@@ -73,6 +80,10 @@ align-items: center;
     font-family: "League Gothic", sans-serif;;
     color: #ffff;
     margin-left: 190px;
+}
+
+.login-buton:hover {
+  background-color: #010038;
 }
 
 .table tr:hover{

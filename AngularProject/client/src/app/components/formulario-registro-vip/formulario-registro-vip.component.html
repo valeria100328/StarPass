@@ -6,6 +6,7 @@
       </a>
 
       <h1 class="title">Registro Boleteria</h1>
+      <!-- comentario prueba -->
 
       <button class="navbar-toggler"
       type="button"
@@ -42,7 +43,7 @@
 
   <div class="col-md-6" style="padding-left: 10px;">
       <label for="cantidad_unidadboleteria"
-      class="form-label">Cantidad por unidad</label>
+      class="form-label">Cantidad</label>
       <input [readonly]="true" type="text" formControlName= "cantidad_unidad" class="form-control">
       <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('cantidad_unidad')?.hasError('required') && registroTicketshopFormVip.get('cantidad_unidad')?.touched">Se requiere la cantidad por unidad de boletas para reservar</p>
       <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('cantidad_unidad')?.hasError('pattern')">El precio no es valido, debe ser un número</p>
@@ -59,7 +60,7 @@
 
   <div class="col-md-6" style="padding-left: 10px;">
       <label for="precio_asignadosboleteria"
-      class="form-label">Precio</label>
+      class="form-label">Precio unidad</label>
       <input [readonly]="true" type="text" formControlName= "precio" class="form-control">
       <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('precio')?.hasError('required') && registroTicketshopFormVip.get('precio')?.touched">Se requiere el precio de la boleta para tener una reserva exitosa</p>
       <p class="fw-bold text-danger" *ngIf="registroTicketshopFormVip.get('precio')?.hasError('pattern')" >El precio no es valido, debe ser un número</p>

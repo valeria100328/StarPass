@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150vh;
+  height: 110vh;
 }
 
 .login-page {
@@ -44,6 +44,9 @@ label {
   margin-right: 10%;
 }
 
+.login-buton:hover {
+  background-color: #010038;
+}
 
 
 .iconsSocialNetworks i {

@@ -38,7 +38,7 @@
   </nav>
   <br /><br />
   <button class="buttonRegistro">
-    <span routerLink="/formularioregistroboletavip">Agregar Nueva Boleteria</span>
+    <span routerLink="/formularioregistrovip">Agregar Nueva Boleteria</span>
     <svg width="15px" height="10px" viewBox="0 0 13 10">
       <path d="M1,5 L11,5"></path>
       <polyline points="8 1 12 5 8 9"></polyline>
@@ -52,9 +52,9 @@
     <table id="Clientes" *ngIf="listaBoletaVip.length > 0">
       <tr>
         <th>Sección</th>
-        <th>Cantidad por Unidad</th>
+        <th>Cantidad</th>
         <th>Servicio</th>
-        <th>Precio</th>
+        <th>Precio unidad</th>
       </tr>
 
       <tr *ngFor="let data_BoletaVip of listaBoletaVip">

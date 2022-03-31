@@ -18,7 +18,7 @@ export class BoletaVipService {
   //Aqui evidenciamos los parametros que necesitamos
   postBoletaVip(boletavip:BoletaVip): Observable<any>{
 
-    return this.http.post(this.url_apivip, BoletaVip)
+    return this.http.post(this.url_apivip, boletavip)
   }
   getBoletaVip(id: String): Observable<any>{
     //return this.http.get(this.url_api +id)

@@ -1,5 +1,7 @@
 .navbar {
-  background-color: #45046a;
+  /* background-color: #45046a; */
+  background-image: linear-gradient(180deg, #872657 12%, #45046a 50%, #010038 100%);
+
   overflow: hidden;
 }
 
@@ -9,13 +11,14 @@
 }
 
 .btn {
-  background-color: #872657;
+  background-color: #45046a;
   color: #fff;
 }
 
 .btn:hover {
-  background-color: #010038;
+  background-color: #872657;
   color: #fff;
+
 }
 
 i {
@@ -36,6 +39,9 @@ i {
 }
 
 .navbar a:hover {
-  background-color: #872657;
+  /* background-color: #fadb5b; */
+  box-shadow: 0 15px 15px 5px #FADB5E;
+  /* background-color: #872657; */
+  /* color: rgb(3, 3, 3); */
   color: #fff;
 }
